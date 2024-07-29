@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Nota para los profesores-->
+    <!--El archivo index Muestra en la pagína las 5 secciones
+    Inicio,Nosotros,Sevicios,Clientes y Contacto-->
+    <!--Los otros archivos html de la carpeta secciones funcionan entre ellos,
+    Ya que en este index se encuentran los 4 archivos pero como secciones;
+    los incluí para que se pudiera entender mejor que hice en cada sección y cumplir con lo  que indico el profe Fede-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admon Raíces</title>
+    <!--Aqui van las hojas de estilo css que ocupe en mi proyecto
+    Utilice un css general que es el primero
+    y después utilice uno para cada sección para que asi sean más facil de modificar-->
+    <link rel="stylesheet" href="./estilos/estilo.css"> <!--Este es el css general para todo el proyecto-->
+    <link rel="stylesheet" href="./estilos/navbar.css">
+    <link rel="stylesheet" href="./estilos/home.css">
+    <link rel="stylesheet" href="./estilos/valores.css">
+    <link rel="stylesheet" href="./estilos/servicios.css">
+    <link rel="stylesheet" href="./estilos/contacto.css">
+    <link rel="stylesheet" href="./estilos/clientes.css">
+</head>
+<body> <!--Aqui empece el body que sera todo el cuerpo del proyecto-->
+    <header class="topheader"> <!--Aqui inserte el header que sirve como menú de mi proyecto-->
+        <nav class="topnav">   <!--Aqui inserte el nav-->
+            <a href="#" class="logo">
+                <img height ="70" width="70" src="./assets/images/Admon.png" alt="logo"> <!--Imagen que servirá como logo del menú-->
+                <div>
+                    Admon Raíces
+                </div>
+            </a>
+            <ul class ="menu"> <!--Menú que contendrá los enlaces a cada sección-->
+                <li><a href="#Inicio" class="selected">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
+                <li><a href="#Nosotros">Nosotros</a></li>
+                <li><a href="#Servicios">Servicios</a></li>
+                <li><a href="#Clientes">Clientes</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="horizontal-padding vertical-padding"> <!--Div que contendrá a la sección y le dará padding para centrarla-->
+            <section class="home" id="Inicio"> <!--Sección de Inicio, es la que se muestra al abir la página-->
+                <div class ="home-info">
+                    <h1 class="home-title">Administración de condominios</h1> <!--H1 que contendrá mi página-->
+                    <p class="home-details">
+                    Somos una empresa profesional en servicios de administración condominal, ofrecemos 
+                    soluciones inmobiliarias incluyendo la administración de su condominio para que sus 
+                    habitantes puedan vivir con tranquilidad, seguridad, comodidad y su inmueble tenga la debida 
+                    conservación y una mayor plusvalía.
+                    </p>
+                </div>
+                <div class="home-img-section"> <!--Div que contendrá la imagen-->
+                    <img class="home-img" src="./assets/images/admon3.jpg" alt="Administracion de condominios">  <!--Aqui inserte la imagen de inicio-->
+                    <span class="home-img-line"></span> <!--Aqui inserte un span para la línea azul que va abajo de la imagen-->
+                </div>
+            </section> <!--Fin de la sección Inicio-->
+        </div>
+        
+
+        <div class="cambio-seccion-val"> <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <div class="horizontal-padding vertical-padding"> <!--Div que contendrá a la sección y le dará padding para centrarla-->
+                <section class="valores" id="Nosotros"><!--Sección Nosotros-->
+                    <div class="cont-val">
+                        <h2 class="valores-title">Nuestros Valores</h2> <!--Aqui inserte un h2, ya no use h1 por recomandaciones de los profes, de solo tener un h1-->
+                        <p class="title-inline"></p> <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
+                        <div class="val-contenedor">  <!--Aqui inserte un contenedor en el que estarán los valores, descripción e imagen -->
+                            <div class="val-column">   <!--La clase val-column la utilice como columna para cada uno de los valores-->
+                                <img height ="100" width="170" src="./assets/images/Mision.jpg" alt="Mision">  <!--Aqui inserte una imagen-->
+                                <p class="val-subtitle">Mision
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolore corporis omnis quae. Obcaecati rerum aut optio pariatur id sequi! Corrupti voluptates dolor asperiores optio fuga quasi sit? Quaerat, iste.
+                                </p>
+                            </div>
+                            <div class="val-column">
+                                <img  height ="100" width="170" src="./assets/images/Vision.jpg" alt="Vision">  <!--Aqui inserte una imagen-->
+                                <p class="val-subtitle">Vision
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non sit repellendus nemo saepe laboriosam similique cupiditate, sint ex hic excepturi dolorum ratione porro eos, mollitia laudantium consequatur vel rem.
+                                </p> 
+                            </div>
+                            <div class="val-column">
+                                <img  height ="100" width="170" src="./assets/images/Compromiso.jpg" alt="Compromiso">   <!--Aqui inserte una imagen-->
+                                <p class="val-subtitle">Compromiso
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non sit repellendus nemo saepe laboriosam similique cupiditate, sint ex hic excepturi dolorum ratione porro eos, mollitia laudantium consequatur vel rem.
+                                </p> 
+                            </div>
+                            <div class="val-column">
+                                <img  height ="100" width="170" src="./assets/images/Atencion.jpg" alt="Atención">   <!--Aqui inserte una imagen-->
+                                <p class="val-subtitle">Atención
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non sit repellendus nemo saepe laboriosam similique cupiditate, sint ex hic excepturi dolorum ratione porro eos, mollitia laudantium consequatur vel rem.
+                                </p>  
+                            </div>
+                        </div>
+                    </div>
+                </section>  <!--Fin de la sección Nosotros-->
+            </div>
+        </div>
+
+
+        <div class="cambio-seccion-serv">    <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <div class="horizontal-padding vertical-padding">       <!--Div que contendrá a la sección y le dará padding para centrarla-->
+                <section class="servicios" id="Servicios">          <!--Sección Servicios-->
+                    <div class="cont-serv">
+                        <h2 class="servicios-title">Servicios</h2>      <!--Título de la sección Servicios-->
+                        <p class="title-inline"></p>                     <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
+                        <div class="serv-contenedor">                    <!--Contenedor de la imagen e información de servicios-->
+                            <div class="serv-logo">                       <!--Div que contendrá la imagen del lado izquierdo-->
+                                <img class="serv-logo-img" src="./assets/images/Admon.png" alt="Logo">     <!--Aqui inserte la imagen del lado izquierdo de servicios-->
+                            </div>
+                            <div class="serv-info">
+                                <li> Registro ante PROSOC y libro de Actas.</li>
+                                <li>Organizar Comité de Vigilancia.</li>
+                                <li> Monitoreo y elaboración de consignas de seguridad.</li>
+                                <li> Supervisión constante del personal de limpieza general de áreas comunes.</li>
+                                <li> Supervisión de trabajos de mantenimiento preventivo y correctivo de instalaciones. </li>
+                                <div class="serv-extras-cont">
+                                    <div class="serv-cobranza">
+                                        <h2 class="serv-cobranza-title">Cobranza</h2>  <!--Subtitulo de la sección servicios-->
+                                        <li>Efectuamos recuperación a corto plazo, empleamos el diálogo para de manera cortés y
+                                            diplomática, convencer a los condóminos con morosidad de efectuar sus pagos, así como
+                                            exponer la importancia de cumplimiento de sus cuotas condominales.
+                                            </li>
+                                    </div>
+                                    <div class="serv-cobranza">
+                                        <h2 class="serv-cobranza-title">Cobranza via Civil</h2>  <!--Subtitulo de la sección servicios-->
+                                        <li> Aplica en los casos en que ya se agotaron todas las instancias (incluyendo PROSOC) y
+                                            por la asamblea se aprueba recurrir a esta vía.
+                                            </li>
+                                        <li> Contamos con una experimentada y bien constituida área legal que puede asesorar y
+                                            llevar a cabo los protocolos pertinentes para la recuperación de cuotas morosas (costo
+                                            extra)</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>   <!--Fin de la sección Servicios-->
+            </div>
+        </div>
+
+
+        <div class="cambio-seccion-client">     <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <div class="horizontal-padding vertical-padding">    <!--Div que contendrá a la sección y le dará padding para centrarla-->
+                <section class="clientes" id="Clientes">         <!--Sección Clientes-->
+                    <div class="cont-client">
+                        <h2 class="clientes-title">Clientes</h2>   <!--Título de la sección Clientes-->
+                        <p class="title-inline"></p>               <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
+                        <div class="client-contenedor">
+                            <div class="client-logo">
+                                <img class="client-logo-img" src="./assets/images/Admon.png" alt="Logo">   <!--Aqui inserte la imagen del lado izquierdo de Clientes-->
+                            </div>
+                            <div class="client-info"> <!--Div con lista de clientes-->
+                                <li> Condominio “Privanza Morelos” ( 80 UPP)
+                                    <br>Av. Morelos No. 70 Col. Juárez, Alcaldía Cuauhtémoc
+                                    </li>
+                                <li>Condominio Palenque ( 9 UPP)<br>
+                                    Calle Palenque No. 217 Col. Narvarte Oriente, Alcaldía Benito Juárez.</li>
+                                <li> Condominio “Villas Europeas” (19 UPP)<br>
+                                    Camino al Desierto de los Leones No. 5740 Col. Tetelpa, Alcaldía Álvaro
+                                    Obregón</li>
+                                <li> Condominio “Taller” (10 UPP)<br>
+                                    Av. Del Taller No. 648 Col. Jardín Balbuena, Alcaldía Venustiano Carranza.</li>
+                                <li> Condominio “Geovillas La Viga” (142 UPP)<br>
+                                    Calz. de La Viga No. 210 Col. Artes Gráficas, Alcaldía Venustiano Carranza. </li>
+                                <li>Condominio “Zempoala 397” (9 UPP)<br>
+                                    Calle Zempoala No. 397 Col. Narvarte, Alcaldía Benito Juárez</li>
+                                <li>Condominio “Hamburgo 322” (20 UPP)<br>
+                                    Calle Hamburgo No. 322, Col. Juárez, Alcaldía Cuauhtémoc</li>
+                                <li>Condominio Universidad (20 UPP)<br>
+                                    Avenida Universidad No. 441, Col. Del Valle</li>
+                                <li>Condominio Zempoala 403 (9 UPP)<br>
+                                    Calle Zempoala No. 403 Col. Narvarte, Alcaldía Benito Juárez</li>
+                            </div>
+                        </div>
+                    </div>
+                </section>     <!--Fin de la sección Clientes-->
+            </div>
+        </div>
+
+        <div class="cambio-seccion-contacto">      <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <div class="horizontal-padding vertical-padding">   <!--Div que contendrá a la sección y le dará padding para centrarla-->
+                <section class="contacto" id="Contacto">         <!--Sección Contacto-->
+                    <div class="cont-contact">
+                        <h2 class="contacto-title">Contacto</h2>      <!--Título de la sección Contacto-->
+                        <p class="contacto-subtitle">Comunicate con nosotros o Escribenos tus dudas</p>
+                        <p class="title-inline"></p>                  <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
+                        <div class="contacto-contenedor">             <!--Este contenedor tiene todos los medios de contacto y estará del lado izquierdo-->
+                            <div>
+                            <ul class="contacto-medios">                      <!--Aqui inserte un lista desordenada con imagenes y texto-->
+                                <li class="c"><img class="contact-img" height ="50" width="50" src="./assets/images/wa.png" alt="logo">55 79 2831 76</li>
+                                <li class="c"><img class="contact-img" height ="50" width="50" src="./assets/images/correo.png" alt="logo">admonbraices@gmail.com</li>
+                                <li class="c"><img class="contact-img" height ="50" width="50" src="./assets/images/ubi.jpg" alt="logo">Francisco Pimentel No. 45, Col. San Rafael</li>
+                            </ul>
+                            </div>                                                 <!--No lo agregue como form para ahorrar lineas de código-->
+                            <div class="formulario-contenedor">                    <!--Aqui empieza el formulario-->
+                                    <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                    </label>
+                                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                </p>
+                                
+                                <p>
+                                    <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                    </label>
+                                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                </p>
+                            
+                                <p>
+                                    <label for="telefone" class="colocar_telefono">Teléfono
+                                    </label>
+                                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                                </p>    
+                                
+                                <p>
+                                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                    </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                                    </p>
+                                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>   <!--Boton para enviar -->
+                                    <p class="aviso">
+                                        <span class="obligatorio"> * </span>Los campos son obligatorios.
+                                    </p>     
+                            </div>
+                        </div>
+                    </div>
+                </section>  <!--Fin de la sección Contacto-->
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer>    <!--Aqui empieza el footer-->
+    <img height ="70" width="70" src="./assets/images/Admon.png" alt="logo">  <!--Aqui inserte una imagen como logo para el footer-->
+    <p>Copyright 2024© Admon Raíces</p>
+</footer>    <!--Aqui termina el footer-->
+</html>

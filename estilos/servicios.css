@@ -1,0 +1,61 @@
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-serv{
+    background-color:white;
+}
+
+/*Esta clase es para editar la sección servicios*/
+.servicios{
+    background-color: beige;
+}
+
+/*Esta clase es para modificar el titulo de la sección servicios*/
+.servicios-title{
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección servicios*/
+.serv-contenedor{
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+}
+
+/*Esta clase es para la imagen de servicios*/
+.serv-logo-img{
+height: auto;
+width: auto;  
+}
+
+/*Esta clase es para toda la información de Servicios*/
+.serv-info{
+    text-align: left;
+    padding-left: 40px;
+}
+
+/*Esta clase contiene a Cobranza y Cobranza via civil*/
+.serv-extras-cont{
+    margin-top: 10px;
+    display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+    justify-content: space-between;
+}
+
+/*Esta clase afecta a cobranza y cobranza via civil*/
+.serv-cobranza{
+    max-width: 380px;  /*Definimos un ancho máximo para que se vea más estético*/
+    text-align: left;
+}
+
+/*Esta clase es para los elementos li de la clase serv-cobranza*/
+.serv-cobranza li{
+    padding-bottom: 5px;
+}
+
+/*Esta clase es para editar las propiedades del titulo de cobranza y cobranza via civil*/
+.serv-cobranza-title{
+    text-align: center;
+    font-size: 35px;
+    font-family: BebasNeue;
+    padding-bottom: 15px; /*Ponemos un padding hacia abajo para separar los titulos de la descripción*/
+}
+

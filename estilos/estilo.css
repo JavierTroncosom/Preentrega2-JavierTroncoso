@@ -1,0 +1,72 @@
+/*Fuentes que utilice en el proyecto*/
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/fonts/Bebasneue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../assets/fonts/Merryweather/Merriweather-Regular.ttf);
+}
+
+
+/*Este es un reset que nos recomendaron los profes*/
+*{
+    margin:0;
+    padding: 0;
+    margin-right: 0-px;
+} 
+
+/*Este es un padding general de manera horizontal es decir para que se mantenga un poco mas al centro en el eje horizontal*/
+.horizontal-padding{
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+/*Este es un padding general de manera vertical es decir para que se mantenga un poco mas al centro en el eje vertical*/
+.vertical-padding{
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+}
+
+/*Esta clase es para separar el titulo de su contenedor hijo*/
+.title-inline{
+    margin-top: 0;
+    height: 15px;
+    background-color: white;
+}
+
+/*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
+body{
+    padding-top: 100px;
+}
+
+/*Para que los enlaces no se vean de color azul*/
+a{
+    text-decoration: none;
+}
+
+/*Este atributo se utiliza para dejar un margen hacia arriba
+, ya que al utilizar fixed en el menu se necesita un espacio de 100px(lo que ocupa el menú)
+para que las secciones se visualicen bien*/
+section[id]{
+    scroll-margin-top: 100px ;
+}
+
+/*Este atrbuto es para que al dar click entre las diferentes secciones
+el scroll sea mas suave para la vista*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Este atributo es para los footer únicamente le cambia el color, la alineación y lo eleva un poco
+ya que en lo personal; por ahora no me gusta que quede tan abajo*/
+footer{
+    text-align: center;
+    background-color:  #b5bac9;
+    margin-bottom: 80px;
+    margin-left: 70px;
+    margin-right: 70px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admon Raíces</title>
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="stylesheet" href="../estilos/navbar.css">
+    <link rel="stylesheet" href="../estilos/clientes.css">
+    <link rel="stylesheet" href="../estilos/valores.css">
+    <link rel="stylesheet" href="../estilos/servicios.css">
+    <link rel="stylesheet" href="../estilos/contacto.css">
+</head>
+<body>
+    <header class="topheader"> <!--Aqui inserte el header que sirve como menú de mi proyecto-->
+        <nav class="topnav">   <!--Aqui inserte el nav-->
+            <a href="#" class="logo">
+                <img height ="70" width="70" src="../assets/images/Admon.png" alt="logo"> <!--Imagen que servirá como logo del menú-->
+                <div>
+                    Admon Raíces
+                </div>
+            </a>
+            <ul class ="menu"> <!--Menú que contendrá los enlaces a cada sección-->
+                <li><a href="" class="selected">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
+                <li><a href="../secciones/nosotros.html">Nosotros</a></li>
+                <li><a href="../secciones/servicios.html">Servicios</a></li>
+                <li><a href="../secciones/clientes.html">Clientes</a></li>
+                <li><a href="../secciones/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cambio-seccion-contacto">      <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+        <div class="horizontal-padding vertical-padding">   <!--Div que contendrá a la sección y le dará padding para centrarla-->
+            <section class="contacto" id="Contacto">         <!--Sección Contacto-->
+                <div class="cont-contact">
+                    <h2 class="contacto-title">Contacto</h2>      <!--Título de la sección Contacto-->
+                    <p class="contacto-subtitle">Comunicate con nosotros o Escribenos tus dudas</p>
+                    <p class="title-inline"></p>                  <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
+                    <div class="contacto-contenedor">             <!--Este contenedor tiene todos los medios de contacto y estará del lado izquierdo-->
+                        <div>
+                        <ul class="contacto-medios">                      <!--Aqui inserte un lista desordenada con imagenes y texto-->
+                            <li class="c"><img class="contact-img" height ="50" width="50" src="../assets/images/wa.png" alt="logo">55 79 2831 76</li>
+                            <li class="c"><img class="contact-img" height ="50" width="50" src="../assets/images/correo.png" alt="logo">admonbraices@gmail.com</li>
+                            <li class="c"><img class="contact-img" height ="50" width="50" src="../assets/images/ubi.jpg" alt="logo">Francisco Pimentel No. 45, Col. San Rafael</li>
+                        </ul>
+                        </div>                                                 <!--No lo agregue como form para ahorrar lineas de código-->
+                        <div class="formulario-contenedor">                    <!--Aqui empieza el formulario-->
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                  <span class="obligatorio">*</span>
+                                </label>
+                                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                              </p>
+                            
+                              <p>
+                                <label for="email" class="colocar_email">Email
+                                  <span class="obligatorio">*</span>
+                                </label>
+                                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                              </p>
+                          
+                              <p>
+                                <label for="telefone" class="colocar_telefono">Teléfono
+                                </label>
+                                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                              </p>    
+                            
+                              <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                  <span class="obligatorio">*</span>
+                                </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                                </p>
+                                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>   <!--Boton para enviar -->
+                                <p class="aviso">
+                                    <span class="obligatorio"> * </span>Los campos son obligatorios.
+                                </p>     
+                        </div>
+                    </div>
+                </div>
+            </section>  <!--Fin de la sección Contacto-->
+        </div>
+    </div>
+
+</body>
+<footer>    <!--Aqui empieza el footer-->
+    <img height ="70" width="70" src="../assets/images/Admon.png" alt="logo">  <!--Aqui inserte una imagen como logo para el footer-->
+    <p>Copyright 2024© Admon Raíces</p>
+</footer>    <!--Aqui termina el footer-->
+</html>
