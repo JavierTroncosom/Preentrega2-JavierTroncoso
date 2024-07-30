@@ -283,33 +283,6 @@ width: auto;
     padding-bottom: 30px;
 }
 
-/*Estilos para el formulario de contacto*/
-.contenedor-inicio { height: 34px; display: grid; justify-content: flex-end; }
-
-.container h1{ margin-top: 0; margin-right: 100%; font-family: monospace; }
-
-main{ display: grid; grid-template-rows: auto; }
-
-div.form { width: 100%; display: flex; justify-content: center; } }
-
-.form{ margin-top: 50px; border: 2px solid darkgray; }
-
-form form{ margin-top: 25px; }
-
-form label{ display: block; margin: 0 0 10px; }
-
-form input{ display: block; font-size: 14px; margin: 0 0 20px; padding: 10px 25px; width: 400px; }
-
-.enviar{ width: 100%; padding: 15px 0; font-size: 18px; font-weight: bold; color: white; background: orange; border: none; border-radius: 5px; cursor: pointer; transition: 1s all; }
-
-.enviar:hover{ background: darkorange; transform: scale(1.2); }
-
-table{ margin: 40px 40px; }
-
-thead{ background: #555555; color: white; font-weight: bold; }
-
-td th{ border: 1px solid black; padding: 8px 15px; } 
-
 
 
 
@@ -509,11 +482,6 @@ flex-direction: column-reverse;
     grid-template-columns: 1fr;
     align-content: center;
     row-gap: 5px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
 }
 
 }
