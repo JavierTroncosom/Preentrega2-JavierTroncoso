@@ -303,7 +303,7 @@ width: auto;
     flex-direction: column;
     position:fixed;
     left:0px;
-    top: 120px;
+    top: 90px;
     right: 15px;
     width: 45%;
     align-items: left;
@@ -345,7 +345,7 @@ width: auto;
 
 .menu_abierto{
     opacity: 1;
-    pointer-events: all
+    pointer-events: all;
 }
 .home{
   padding-top: 15px;
