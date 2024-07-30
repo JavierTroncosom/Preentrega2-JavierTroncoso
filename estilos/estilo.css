@@ -239,8 +239,44 @@ flex-direction: column-reverse;
 
 }
 
-html{
-    overflow: hidden;
+/*Esta clase es para editar el titulo de la sección Nosotros*/
+.valores-title{
+    text-align: center; /*Centramos el texto*/
+    font-family: BebasNeue;/*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
+    font-size: 40px;
+    color: black;
+}
+
+/*Esta clase es para el fondo detras del título valores*/
+.valores{
+    background-color: aqua;
+    margin-bottom: 1rem;
+}
+
+/*Esta clase es para centrar los valores*/
+.cont-val{
+    align-items: center;
+}
+
+
+/*Esta clase es el contenedor que tiene a los div val-column*/
+.val-contenedor{
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    text-align: center;
+    align-items: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    flex-direction: column;
+    background-color: beige;
+}
+
+/*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+.val-column{
+    max-width: 480px; /*Un ancho máximo para que se vea mas estructurado*/
+    max-height: fit-content;
+    text-align: left;
+    margin-right: 0px; /*Margenes para que se vea mas estructurado*/
+    margin-left: 0px;
+    padding-bottom: 10px;
 }
 
 }
