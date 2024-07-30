@@ -125,6 +125,167 @@ footer{
     margin: 0 auto;
 }
 
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-val{
+    background-color:white;
+    margin:0;
+    
+}
+/*Esta clase es para editar el titulo de la sección Nosotros*/
+.valores-title{
+    text-align: center; /*Centramos el texto*/
+    font-family: BebasNeue;/*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
+    font-size: 40px;
+    color: black;
+}
+
+/*Esta clase es para el fondo detras del título valores*/
+.valores{
+    background-color: aqua;
+    margin-bottom: 1rem;
+}
+
+/*Esta clase es para centrar los valores*/
+.cont-val{
+    align-items: center;
+}
+
+
+/*Esta clase es el contenedor que tiene a los div val-column*/
+.val-contenedor{
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    padding-left: 17%;
+    text-align: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    background-color: beige;
+}
+
+/*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+.val-column{
+    align-items: center;
+    width: 180px; /*Un ancho máximo para que se vea mas estructurado*/
+    text-align: left;
+    margin-right: 50px; /*Margenes para que se vea mas estructurado*/
+}
+
+/*Esta clase es para el Nombre de cada valor en los divs*/
+.val-subtitle{
+    text-align: center; /*Lo alineamos en el centro para que se vea mas estético*/
+}
+
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-serv{
+    background-color:white;
+}
+
+/*Esta clase es para editar la sección servicios*/
+.servicios{
+    background-color: beige;
+}
+
+/*Esta clase es para modificar el titulo de la sección servicios*/
+.servicios-title{
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección servicios*/
+.serv-contenedor{
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+}
+
+/*Esta clase es para la imagen de servicios*/
+.serv-logo-img{
+height: auto;
+width: auto;  
+}
+
+/*Esta clase es para toda la información de Servicios*/
+.serv-info{
+    text-align: left;
+    padding-left: 40px;
+}
+
+/*Esta clase contiene a Cobranza y Cobranza via civil*/
+.serv-extras-cont{
+    margin-top: 10px;
+    display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+    justify-content: space-between;
+}
+
+/*Esta clase afecta a cobranza y cobranza via civil*/
+.serv-cobranza{
+    max-width: 380px;  /*Definimos un ancho máximo para que se vea más estético*/
+    text-align: left;
+}
+
+/*Esta clase es para los elementos li de la clase serv-cobranza*/
+.serv-cobranza li{
+    padding-bottom: 5px;
+}
+
+/*Esta clase es para editar las propiedades del titulo de cobranza y cobranza via civil*/
+.serv-cobranza-title{
+    text-align: center;
+    font-size: 35px;
+    font-family: BebasNeue;
+    padding-bottom: 15px; /*Ponemos un padding hacia abajo para separar los titulos de la descripción*/
+}
+
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-client{
+    background-color:white;
+}
+
+/*Esta clase es para editar la sección clientes*/
+.clientes{
+    background-color: beige;
+}
+
+/*Esta clase es para modificar el titulo de la sección clientes*/
+.clientes-title{
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección clientes*/
+.client-contenedor{
+    /*display: flex;/*Aqui utilice flex para poner un listado a la derecha de la imagen*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: ;
+}
+
+.client-contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Esta clase es para la imagen de cliente*/
+.client-logo-img{
+height: auto;
+width: auto;  
+}
+
+/*Esta clase es para toda la información de cliente(Lado derecho)*/
+.client-info{
+    text-align: left;
+    padding-left: 40px;
+}
+
+/*Esta clase es para modficar los elementos li del contenedor .client-info*/
+.client-info li{
+    padding-bottom: 30px;
+}
+
+
+
+
 @media screen and (min-device-width:320px) and (max-width:480px){
     /*Esta clase se enfoca en la imagen del logo y la redondea*/
 .logo img{
@@ -200,8 +361,7 @@ flex-direction: column-reverse;
     display: none;
 }
 
-/*Clase para las propiedades de la imagen de inicio*/
-.home-img{
+.home-img-section img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -271,12 +431,57 @@ flex-direction: column-reverse;
 
 /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
 .val-column{
-    max-width: 480px; /*Un ancho máximo para que se vea mas estructurado*/
+    width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
     max-height: fit-content;
-    text-align: left;
-    margin-right: 0px; /*Margenes para que se vea mas estructurado*/
+    text-align: center;
+    padding-right: 15px; /*Margenes para que se vea mas estructurado*/
     margin-left: 0px;
     padding-bottom: 10px;
+}
+
+.val-column p{
+    max-width: 480px;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección servicios*/
+.serv-contenedor{
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.serv-contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.serv-info{
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+
+.serv-extras-cont{
+    margin-top: 10px;
+    display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección clientes*/
+.client-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 5px;
 }
 
 }
