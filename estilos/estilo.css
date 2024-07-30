@@ -77,7 +77,55 @@ footer{
     display: none;
 }
 
-@media only screen and (min-device-width:320px) and (max-width:480px){
+/*Clase para las propiedades de la imagen de inicio*/
+.home-img{
+    width: 100%;
+    max-width: 1200px;
+}
+
+/*Clase que contendrá a la imagen de inicio*/
+.home-img-section{
+    padding-left: 30px;
+    position: relative;/*La posición es relativa para que en la clase de abajo la pueda poscionar respecto a esta*/
+}
+
+/*Clase que funciona para poner una línea debajo de la imagen de incio*/
+.home-img-line{
+    background-color: aqua;
+    height: 15px;
+    position:absolute;/*Para posicionar la linea respecto a la imagen*/
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+/*Clase que es la sección Inicio y le dará formato a los elementos que esten dentro de ella*/
+.home{
+    text-align: left; /*Alineación del texto a la izquierda*/
+    display:flex; /*Utilice el flex para poner a la derecha del texto la imagen*/
+    justify-content: space-between;/*Para dar espacio entre la imagen y el texto*/
+    align-items: center;
+}
+
+/*Para el titulo Administración de condominios en el inicio*/
+.home-title{
+    font-family: BebasNeue;
+    font-size:40px;
+    margin:0;
+    color: black;
+}
+
+.home-details{
+    font-size: 25px;
+    text-align: left;
+    font-family: Merriweather;
+    font-style: italic;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
     /*Esta clase se enfoca en la imagen del logo y la redondea*/
 .logo img{
     border-radius: 50%; /*Imagen redondeada*/
@@ -138,4 +186,57 @@ footer{
     opacity: 1;
     pointer-events: all
 }
+.home{
+  padding-top: 15px;
+  height: 75vh;
+  display: grid;
+  grid-template-rows: 50% 50%;  
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+.home-img-line{
+    display: none;
+}
+
+/*Clase para las propiedades de la imagen de inicio*/
+.home-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*Para el titulo Administración de condominios en el inicio*/
+.home-title{
+    font-family: BebasNeue;
+    text-align: center;
+    font-size: 30px;
+    margin:0;
+    color: black;
+}
+
+.home-details{
+    font-size: 20px;
+    text-align: center;
+    font-family: Merriweather;
+    font-style: italic;
+    max-width: 480px;
+    margin: 0 0;
+}
+
+.horizontal-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/*Este es un padding general de manera vertical es decir para que se mantenga un poco mas al centro en el eje vertical*/
+.vertical-padding{
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+
 }
