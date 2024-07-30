@@ -15,6 +15,7 @@
     margin:0;
     padding: 0;
     margin-right: 0-px;
+    box-sizing: border-box;
 } 
 
 /*Este es un padding general de manera horizontal es decir para que se mantenga un poco mas al centro en el eje horizontal*/
@@ -69,4 +70,71 @@ footer{
     margin-bottom: 80px;
     margin-left: 70px;
     margin-right: 70px;
+}
+
+.open-menu,
+.close-menu{
+    display: none;
+}
+
+@media only screen and (min-device-width:320px) and (max-width:480px){
+    /*Esta clase se enfoca en la imagen del logo y la redondea*/
+.logo img{
+    border-radius: 50%; /*Imagen redondeada*/
+}
+
+/*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
+.logo div{
+    color:white;
+    padding-left: 5px;
+}
+
+/*Menú*/
+.menu{
+    flex-direction: column;
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    align-items: center;
+    background-color: #092327 ;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/*Esta clase es para separar los li del menú*/
+.menu li{
+    padding: 0 15px;
+
+}
+
+/*Esta clase es para cambiar el estilo de los enlaces del menú*/
+.menu a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px; /*Para subir la altura de los enlaces a la del logo y quede mas estético*/
+    text-transform: uppercase; /*Transformamos los enlaces en mayúsculas*/
+    position:relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
+}
+
+.open-menu,
+.close-menu{
+    display: block;
+    border:none;
+    background: none;
+    cursor: pointer;
+    padding: 20px 15px;
+}
+.close-menu{
+    align-self: flex-end;
+}
+
+.menu_abierto{
+    opacity: 1;
+    pointer-events: all
+}
 }
