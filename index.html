@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./estilos/estilo.css"> <!--Este es el css general para todo el proyecto-->
     <link rel="stylesheet" href="./estilos/navbar.css">
     <link rel="stylesheet" href="./estilos/contacto.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script defer src="./js/app.js"></script>
     <script src="https://kit.fontawesome.com/bc08dabb5d.js" crossorigin="anonymous"></script>
 </head>
@@ -71,35 +73,55 @@
                         <div class="val-contenedor">  <!--Aqui inserte un contenedor en el que estarán los valores, descripción e imagen -->
                             <div class="val-column">   <!--La clase val-column la utilice como columna para cada uno de los valores-->
                                 <img height ="100" width="170" src="./assets/images/Mision.jpg" alt="Mision">  <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">Mision
+                                <p class="val-subtitle">
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Mision" role="button" aria-expanded="false" aria-controls="Mision">Misión</a>
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat dolore corporis omnis quae. Obcaecati rerum aut optio pariatur id sequi! Corrupti voluptates dolor asperiores optio fuga quasi sit? Quaerat, iste.
-                                </p>
+                                <div class="valor">
+                                    <div class="collapse collapse-horizontal" id="Mision">
+                                      <div class="card card-personalizada  card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quam porro molestias, quos laudantium sint ipsa similique quia reprehenderit perferendis, a nobis modi earum officia cum sit eveniet, fugit eos.
+                                      </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="val-column">
                                 <img  height ="100" width="170" src="./assets/images/Vision.jpg" alt="Vision">  <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">Vision
+                                <p class="val-subtitle">
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Vision" role="button" aria-expanded="false" aria-controls="Vision">Vision</a>
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non sit repellendus nemo saepe laboriosam similique cupiditate, sint ex hic excepturi dolorum ratione porro eos, mollitia laudantium consequatur vel rem.
-                                </p> 
+                                <div class="valor">
+                                    <div class="collapse collapse-horizontal" id="Vision">
+                                      <div class="card card-personalizada  card-body">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo nulla eum facere voluptatem consequatur consequuntur nemo cumque aliquid tempora earum ex unde eaque amet sed, quas impedit, dolore labore!
+                                      </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="val-column">
                                 <img  height ="100" width="170" src="./assets/images/Compromiso.jpg" alt="Compromiso">   <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">Compromiso
+                                <p class="val-subtitle">
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Compromiso" role="button" aria-expanded="false" aria-controls="Compromiso">Compromiso</a>
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non sit repellendus nemo saepe laboriosam similique cupiditate, sint ex hic excepturi dolorum ratione porro eos, mollitia laudantium consequatur vel rem.
-                                </p> 
+                                <div class="valor">
+                                    <div class="collapse collapse-horizontal" id="Compromiso">
+                                      <div class="card card-personalizada  card-body" >
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, neque eligendi iste repellendus sunt repellat dolor exercitationem deleniti ducimus adipisci doloribus officia ullam porro? Consequuntur tenetur facere aliquam fugit quam.
+                                      </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="val-column">
                                 <img  height ="100" width="170" src="./assets/images/Atencion.jpg" alt="Atención">   <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">Atención
+                                <p class="val-subtitle">
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Atencion" role="button" aria-expanded="false" aria-controls="Atencion">Atención</a>
                                 </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias non sit repellendus nemo saepe laboriosam similique cupiditate, sint ex hic excepturi dolorum ratione porro eos, mollitia laudantium consequatur vel rem.
-                                </p>  
+                                <div class="valor">
+                                    <div class="collapse collapse-horizontal" id="Atencion">
+                                      <div class="card  card-personalizada card-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nesciunt consequuntur, accusantium sint aperiam natus culpa omnis ipsa repellat dignissimos tenetur esse earum delectus eos. Unde quas ipsam consequatur fuga!
+                                      </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

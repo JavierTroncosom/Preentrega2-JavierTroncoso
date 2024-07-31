@@ -283,7 +283,9 @@ width: auto;
     padding-bottom: 30px;
 }
 
-
+.card-personalizada{
+    width: 180px;
+}
 
 
 @media screen and (min-device-width:320px) and (max-width:480px){
@@ -434,7 +436,6 @@ flex-direction: column-reverse;
     width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
     max-height: fit-content;
     text-align: center;
-    padding-right: 15px; /*Margenes para que se vea mas estructurado*/
     margin-left: 0px;
     padding-bottom: 10px;
 }
@@ -483,5 +484,24 @@ flex-direction: column-reverse;
     align-content: center;
     row-gap: 5px;
 }
+
+/*Esta clase es el contenedor que tiene a los div val-column*/
+.val-contenedor{
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    padding-left: 17%;
+    text-align: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    background-color: beige;
+}
+
+.valor{
+    padding-left: 5%;
+}
+
+.card-personalizada{
+    width: 300px;
+}
+
+
 
 }
