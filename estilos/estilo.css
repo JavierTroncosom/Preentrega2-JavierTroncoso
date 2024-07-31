@@ -147,6 +147,8 @@ footer{
 
 /*Esta clase es para centrar los valores*/
 .cont-val{
+    padding-top: 0;
+    margin-top: 0;
     align-items: center;
 }
 
@@ -157,7 +159,7 @@ footer{
     padding-left: 17%;
     text-align: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
-    background-color: beige;
+    background-color: aqua;
 }
 
 /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
@@ -189,11 +191,17 @@ footer{
     font-family: BebasNeue;
     font-size: 40px;
     color: black;
+    background-color: beige;
+}
+
+.cont-serv{
+    background-color: white;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección servicios*/
 .serv-contenedor{
     display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    background-color: beige;
 }
 
 /*Esta clase es para la imagen de servicios*/
@@ -239,6 +247,10 @@ width: auto;
     background-color:white;
 }
 
+.cont-client{
+    background-color: white;
+}
+
 /*Esta clase es para editar la sección clientes*/
 .clientes{
     background-color: beige;
@@ -250,6 +262,7 @@ width: auto;
     font-family: BebasNeue;
     font-size: 40px;
     color: black;
+    background-color: beige;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección clientes*/
@@ -258,6 +271,7 @@ width: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: ;
+    background-color: beige;
 }
 
 .client-contenedor img{
@@ -411,8 +425,12 @@ flex-direction: column-reverse;
 
 /*Esta clase es para el fondo detras del título valores*/
 .valores{
-    background-color: aqua;
+    background-color: white;
     margin-bottom: 1rem;
+}
+
+.valores-title{
+    background-color: aqua;
 }
 
 /*Esta clase es para centrar los valores*/
@@ -428,7 +446,6 @@ flex-direction: column-reverse;
     align-items: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
     flex-direction: column;
-    background-color: beige;
 }
 
 /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
