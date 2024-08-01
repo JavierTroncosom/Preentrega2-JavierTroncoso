@@ -131,7 +131,7 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
 
 /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
 body{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 /*Para que los enlaces no se vean de color azul*/
@@ -363,7 +363,7 @@ width: auto;
 .client-contenedor{
     /*display: flex;/*Aqui utilice flex para poner un listado a la derecha de la imagen*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /*Aqui utilice grid para mostrar 2 columnas en las versión de escritorio*/
     grid-template-rows: ;
     background-color: beige;
 }
@@ -394,7 +394,7 @@ width: auto;
 .card-personalizada{
     width: 180px;
 }
-
+/*Esta clase es para ajustar la altura de la imagen en la version de escritorio*/
 .carousel-item{
     height: 400px;
 }
@@ -429,7 +429,7 @@ width: auto;
 
 }
 
-.contacto-contenedor p{
+.contacto-contenedor p{  /*Esta clase es para separar los medios de contacto la utilizamos porque es un elemento de bloque*/
     display: block;
     padding-left: 20px;
     padding-right: 10px;
@@ -439,7 +439,7 @@ width: auto;
     padding-right: 20px;
 }
 
-/*Esta clase es para editar las propiedades de los li*/
+/*Esta clase es para editar las propiedades de los p de la seccion contacto*/
 .c{
     font-family: Merrieather;
     font-style: italic;
@@ -450,6 +450,7 @@ width: auto;
 
 }
 
+/*Los siguientes estilos son para el dropdown de la sección clientes*/
 .btn-title{
     width: 100%;
   }
@@ -477,7 +478,7 @@ width: auto;
     color: black;
 }
 
-
+/*Los siguientes estilos son para modificar el formato del formulario de la sección contacto*/
 .input {
     padding: 8px;
     display: block;
@@ -510,7 +511,7 @@ width: auto;
     background-color: #000;
 }
 
-
+/*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
 @media screen and (min-device-width:320px) and (max-width:480px){
     /*Esta clase se enfoca en la imagen del logo y la redondea*/
 .logo img{
@@ -556,6 +557,7 @@ width: auto;
     position:relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
 }
 
+/*Propiedades al cerrar y abrir el menú*/
 .open-menu,
 .close-menu{
     display: block;
@@ -677,7 +679,7 @@ flex-direction: column-reverse;
     align-items: center;
 }
 
-
+/*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
 .carousel-item img{
     width: 100%;
     height: 100%;
