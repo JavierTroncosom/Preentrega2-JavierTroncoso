@@ -37,7 +37,7 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
 .topnav{
     display: flex;      /*Este flex lo utilice para Separar el logo con el nombre, de los enlaces de las secciones*/
     justify-content: space-between; /*Para separar el logo con nombre de los enlaces*/
-    padding: 10px;
+    padding: 0px;
     max-width: 980px;
     margin: 0 auto; /*Para que al agrandar a minimizar el contenido a lo ancho se ajuste al header*/;
 }
