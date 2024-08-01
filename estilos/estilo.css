@@ -215,6 +215,8 @@ width: auto;
 /*Esta clase es para toda la información de Servicios*/
 .serv-info{
     text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /*Esta clase contiene a Cobranza y Cobranza via civil*/
