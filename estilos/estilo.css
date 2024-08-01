@@ -109,6 +109,7 @@ footer{
 
 /*Para el titulo Administración de condominios en el inicio*/
 .home-title{
+    text-align: center;
     font-family: BebasNeue;
     font-size:40px;
     margin:0;
@@ -202,6 +203,7 @@ footer{
 .serv-contenedor{
     display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
     background-color: beige;
+    justify-content: center;
 }
 
 /*Esta clase es para la imagen de servicios*/
@@ -534,4 +536,7 @@ flex-direction: column-reverse;
     height: 200px;
 }
 
+body{
+    padding-top: 75px;
+}
 }
