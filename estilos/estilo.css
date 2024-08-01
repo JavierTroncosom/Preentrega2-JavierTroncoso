@@ -429,19 +429,14 @@ width: auto;
 
 }
 
-.contacto-contenedor{
-    display: flex; /*Aqui utilice flex para poner el formulario a la derecha de los medios de contacto*/
-}
-
-/*Esta clase es para editar la lista desordenada del lado izquierdo de contacto*/
-.contacto-medios{
-    list-style: none;
-}
-
-/*Esta clase es para editar los imagenes de los li*/
-.contact-img{
-    vertical-align: middle; /*La centramos al centro en el eje vertical para que se vea mas estético*/
+.contacto-contenedor p{
+    display: block;
+    padding-left: 20px;
     padding-right: 10px;
+}
+
+.contacto-contenedor i{
+    padding-right: 20px;
 }
 
 /*Esta clase es para editar las propiedades de los li*/
@@ -482,6 +477,38 @@ width: auto;
     color: black;
 }
 
+
+.input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+.i-btn,.i-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.i-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.i-black,.i-hover-black:hover {
+    color: #fff;
+    background-color: #000;
+}
 
 
 @media screen and (min-device-width:320px) and (max-width:480px){
