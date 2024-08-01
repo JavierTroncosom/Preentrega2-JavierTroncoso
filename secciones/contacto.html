@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--2.0Nota para los profesores-->
+    <!--El archivo index Muestra en la pagína las 5 secciones
+    Inicio,Nosotros,Sevicios,Clientes y Contacto-->
+    <!--Los otros archivos html de la carpeta secciones funcionan entre ellos,
+    Ya que en este index se encuentran los 4 archivos pero como secciones;
+    los incluí para que se pudiera entender mejor que hice en cada sección y cumplir con lo  que indico el profe Fede-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admon Raíces</title>
-    <link rel="stylesheet" href="../estilos/estilo.css">
-    <link rel="stylesheet" href="../estilos/navbar.css">
+    <!--Aqui van las hojas de estilo css que ocupe en mi proyecto
+    Utilice un css general que es el primero
+    y después utilice uno para cada sección para que asi sean más facil de modificar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/estilo.css"> <!--Este es el css general para todo el proyecto-->
     <link rel="stylesheet" href="../estilos/contacto.css">
     <script defer src="../js/app.js"></script>
+    <script src="https://kit.fontawesome.com/bc08dabb5d.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> <!--Aqui empece el body que sera todo el cuerpo del proyecto-->
     <header class="topheader"> <!--Aqui inserte el header que sirve como menú de mi proyecto-->
         <nav class="topnav">   <!--Aqui inserte el nav-->
             <a href="#" class="logo">
@@ -19,72 +30,57 @@
                 </div>
             </a>
             <button class="open-menu" aria-label="Abrir menú">
-                <img img height ="50" width="50" src="../assets/images/menu.png" alt="Abrir Menú">
+                <i class="fa-solid fa-bars  fa-2x fa-lg" style="color: #ffffff;"></i>
             </button>
             <ul class ="menu"> <!--Menú que contendrá los enlaces a cada sección-->
                 <button class="close-menu" aria-label="Cerrar menú">
-                    <img img height ="50" width="50" src="../assets/images/cerrar.jpg" alt="Cerrar Menú">
+                    <i class="fa-solid fa-xmark fa-2x fa-lg" style="color: #ffffff;"></i>
                 </button>
-                <li><a href="" class="selected">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
+                <li><a href="../secciones/inicio.html">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
                 <li><a href="../secciones/nosotros.html">Nosotros</a></li>
                 <li><a href="../secciones/servicios.html">Servicios</a></li>
                 <li><a href="../secciones/clientes.html">Clientes</a></li>
-                <li><a href="../secciones/contacto.html">Contacto</a></li>
+                <li><a href="../secciones/contacto.html" class="selected">Contacto</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="cambio-seccion-contacto">      <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-        <div class="horizontal-padding vertical-padding">   <!--Div que contendrá a la sección y le dará padding para centrarla-->
-            <section class="contacto" id="Contacto">         <!--Sección Contacto-->
-                <div class="cont-contact">
-                    <h2 class="contacto-title">Contacto</h2>      <!--Título de la sección Contacto-->
-                    <p class="contacto-subtitle">Comunicate con nosotros o Escribenos tus dudas</p>
-                    <p class="title-inline"></p>                  <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                    <div class="contacto-contenedor">             <!--Este contenedor tiene todos los medios de contacto y estará del lado izquierdo-->
-                        <div>
-                        <ul class="contacto-medios">                      <!--Aqui inserte un lista desordenada con imagenes y texto-->
-                            <li class="c"><img class="contact-img" height ="50" width="50" src="../assets/images/wa.png" alt="logo">55 79 2831 76</li>
-                            <li class="c"><img class="contact-img" height ="50" width="50" src="../assets/images/correo.png" alt="logo">admonbraices@gmail.com</li>
-                            <li class="c"><img class="contact-img" height ="50" width="50" src="../assets/images/ubi.jpg" alt="logo">Francisco Pimentel No. 45, Col. San Rafael</li>
-                        </ul>
-                        </div>                                                 <!--No lo agregue como form para ahorrar lineas de código-->
-                        <div class="formulario-contenedor">                    <!--Aqui empieza el formulario-->
-                                <label for="nombre" class="colocar_nombre">Nombre
-                                  <span class="obligatorio">*</span>
-                                </label>
-                                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
-                              </p>
-                            
-                              <p>
-                                <label for="email" class="colocar_email">Email
-                                  <span class="obligatorio">*</span>
-                                </label>
-                                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-                              </p>
-                          
-                              <p>
-                                <label for="telefone" class="colocar_telefono">Teléfono
-                                </label>
-                                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                              </p>    
-                            
-                              <p>
-                                <label for="mensaje" class="colocar_mensaje">Mensaje
-                                  <span class="obligatorio">*</span>
-                                </label>                     
-                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+    <main>
+        <div class="cambio-seccion-contacto">      <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <div class="horizontal-padding vertical-padding">   <!--Div que contendrá a la sección y le dará padding para centrarla-->
+                <section class="contacto" id="Contacto">         <!--Sección Contacto-->
+                    <div class="cont-contact">
+                        <h2 class="contacto-title">Contacto</h2>      <!--Título de la sección Contacto-->
+                        <p class="contacto-subtitle">Comunicate con nosotros o Escribenos tus dudas</p>
+                        <p class="title-inline"></p>                  <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
+                        <div class="contacto-contenedor">             <!--Este contenedor tiene todos los medios de contacto y estará del lado izquierdo-->
+                            <p class="c"><i class="fab fa-whatsapp fa-2x"></i> 55 79 2831 76</p>
+                            <p class="c"><i class="fa fa-envelope fa-2x " style="color: #1C1B17;"></i>admonbraices@gmail.com</p>
+                            <p class="c"><i class="fas fa-map-marker-alt fa-2x"></i>Francisco Pimentel No. 45, Col. San Rafael</p>
+                            <form action="">
+                                <p>
+                                    <input class="input i-border" type="text" placeholder="Nombre" required="" name="Name">
+                                <p>
+                                <p>
+                                    <input class="input i-border" type="text" placeholder="Email" required="" name="Email">
                                 </p>
-                                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>   <!--Boton para enviar -->
-                                <p class="aviso">
-                                    <span class="obligatorio"> * </span>Los campos son obligatorios.
-                                </p>     
+                                <p>
+                                    <input class="input i-border" type="text" placeholder="Teléfono" required="" name="Number">
+                                </p>
+                                <p>
+                                    <input class="input i-border" type="text" placeholder="Mensaje" required="" name="Message">
+                                </p>
+                                <p>
+                                    <button class="i-button i-black" type="submit">
+                                        <i class="fa fa-paper-plane"></i> ENVIAR
+                                      </button>
+                                </p>
+                            </form>
                         </div>
                     </div>
-                </div>
-            </section>  <!--Fin de la sección Contacto-->
+                </section>  <!--Fin de la sección Contacto-->
+            </div>
         </div>
-    </div>
+    </main>
 
 </body>
 <footer>    <!--Aqui empieza el footer-->

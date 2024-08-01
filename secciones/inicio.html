@@ -36,45 +36,31 @@
                 <button class="close-menu" aria-label="Cerrar menú">
                     <i class="fa-solid fa-xmark fa-2x fa-lg" style="color: #ffffff;"></i>
                 </button>
-                <li><a href="../secciones/inicio.html">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
+                <li><a href="../secciones/inicio.html" class="selected">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
                 <li><a href="../secciones/nosotros.html">Nosotros</a></li>
                 <li><a href="../secciones/servicios.html">Servicios</a></li>
-                <li><a href="../secciones/clientes.html" class="selected">Clientes</a></li>
+                <li><a href="../secciones/clientes.html">Clientes</a></li>
                 <li><a href="../secciones/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="cambio-seccion-client">     <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <div class="horizontal-padding vertical-padding">    <!--Div que contendrá a la sección y le dará padding para centrarla-->
-                <section class="clientes" id="Clientes">         <!--Sección Clientes-->
-                    <div class="cont-client">
-                        <h2 class="clientes-title">Clientes</h2>   <!--Título de la sección Clientes-->
-                        <p class="title-inline"></p>               <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                        <div class="client-contenedor">
-                            <img src="../assets/images/c1.jpg" alt="">
-                            <img src="../assets/images/c2.jpg" alt="">
-                            <img src="../assets/images/c3.jpg" alt="">
-                            <img src="../assets/images/c4.jpg" alt="">
-                            <img src="../assets/images/c5.jpg" alt="">
-                            <img src="../assets/images/c6.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col text-center">
-                        <button type="button" class="btn btn-title btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          <p>Nuestros clientes</p>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" >Condominio “Privanza Morelos”</a></li>
-                          <li><a class="dropdown-item" >Condominio Palenque</a></li>
-                          <li><a class="dropdown-item" >Condominio “Villas Europeas”</a></li>
-                          <li><a class="dropdown-item" >Condominio “Condominio “Taller””</a></li>
-                          <li><a class="dropdown-item" >Condominio “Geovillas La Viga”</a></li>
-                          <li><a class="dropdown-item" >Condominio “Zempoala 397”</a></li>
-                        </ul>
-                    </div>
-                </section>     <!--Fin de la sección Clientes-->
-            </div>
+        <div class="horizontal-padding vertical-padding"> <!--Div que contendrá a la sección y le dará padding para centrarla-->
+            <section class="home" id="Inicio"> <!--Sección de Inicio, es la que se muestra al abir la página-->
+                <div class ="home-info col-lg-6">
+                    <h1 class="home-title">Administración de condominios</h1> <!--H1 que contendrá mi página-->
+                    <p class="home-details">
+                    Somos una empresa profesional en servicios de administración condominal, ofrecemos 
+                    soluciones inmobiliarias incluyendo la administración de su condominio para que sus 
+                    habitantes puedan vivir con tranquilidad, seguridad, comodidad y su inmueble tenga la debida 
+                    conservación y una mayor plusvalía.
+                    </p>
+                </div>
+                <div class="home-img-section col-lg-6"> <!--Div que contendrá la imagen-->
+                    <img class="home-img" src="../assets/images/admon3.jpg" alt="Administracion de condominios">  <!--Aqui inserte la imagen de inicio-->
+                    <span class="home-img-line"></span> <!--Aqui inserte un span para la línea azul que va abajo de la imagen-->
+                </div>
+            </section> <!--Fin de la sección Inicio-->
         </div>
     </main>
 
