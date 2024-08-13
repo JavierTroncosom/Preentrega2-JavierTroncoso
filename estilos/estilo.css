@@ -745,3 +745,38 @@ body{
     color: black;
 }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    /*Esta clase es el contenedor que tiene a los div val-column*/
+    .val-contenedor{
+        padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+        padding-left: 3%;
+        text-align: center;
+        background-color: aqua;
+    }
+
+    /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+    .val-column{
+        align-items: center;
+        width: 180px; /*Un ancho máximo para que se vea mas estructurado*/
+        text-align: left;
+        margin-left: 0px; /*Margenes para que se vea mas estructurado*/
+        padding-left: 0px;
+    }
+
+    /*Esta clase contiene a la imagen y la información de la sección servicios*/
+.serv-contenedor{
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    flex-direction: column;
+    align-items: center;
+}
+/*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    
+    
+}
