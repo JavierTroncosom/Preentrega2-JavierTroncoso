@@ -58,7 +58,7 @@
     width: 100%
 }
 
-.i-btn,.i-button {
+.i-btn {
     border: none;
     display: inline-block;
     padding: 8px 16px;
@@ -70,6 +70,10 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap
+}
+
+.i-button{
+    @extend .i-btn;
 }
 
 .i-button:hover {
