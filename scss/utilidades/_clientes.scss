@@ -1,3 +1,10 @@
+@mixin black_center{
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+}
+
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
 .cambio-seccion-client{
     background-color:white;
@@ -68,15 +75,10 @@ width: auto;
   }
 
 .btn-title p{
-    text-align: center;
-    font-family: BebasNeue;
-    font-size: 40px;
-    color: black;
+    @include black_center;
 }
 
+
 .dropdown-menu li a{
-    text-align: center;
-    font-family: BebasNeue;
-    font-size: 40px;
-    color: black;
+    @include black_center;
 }
