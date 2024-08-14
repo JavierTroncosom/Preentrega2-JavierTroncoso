@@ -1,0 +1,776 @@
+@charset "UTF-8";
+/*Esta clase se utiliza para el menú en el cual le agregue el color de fondo
+la sombra de color verde, que ocupará todo el ancho de la pantalla y 
+el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
+.topheader {
+  position: fixed;
+  box-shadow: 0 4px 5px green;
+  background-color: #092327;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100; /*Para solucionar problema con la imagen que se quedaba arriva del menú fixed*/
+}
+
+/*Esta clase es mi barra de navegación que contendrá los enlaces para moverme entre secciones*/
+.topnav {
+  display: flex; /*Este flex lo utilice para Separar el logo con el nombre, de los enlaces de las secciones*/
+  justify-content: space-between; /*Para separar el logo con nombre de los enlaces*/
+  padding: 0px;
+  max-width: 980px;
+  margin: 0 auto; /*Para que al agrandar a minimizar el contenido a lo ancho se ajuste al header*/
+}
+
+/*Esta clase contiene el logo y el nombre de la empresa*/
+.logo {
+  display: flex; /*Este flex lo utilice para poner el nombre de la empresa a la derecha del logo*/
+  align-items: center;
+  font-size: 18px;
+}
+
+/*Esta clase se enfoca en la imagen del logo y la redondea*/
+.logo img {
+  border-radius: 50%; /*Imagen redondeada*/
+}
+
+/*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
+.logo div {
+  color: white;
+  padding-left: 5px;
+}
+
+/*Menú*/
+.menu {
+  display: flex; /*Este flex lo utilice para posicionar todos los elementos de la lista del menú*/
+  list-style: none; /*Para quitar el circulo que traen por default los li*/
+}
+
+/*Esta clase es para separar los li del menú*/
+.menu li {
+  padding: 0 15px;
+}
+
+/*Esta clase es para cambiar el estilo de los enlaces del menú*/
+.menu a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 70px; /*Para subir la altura de los enlaces a la del logo y quede mas estético*/
+  text-transform: uppercase; /*Transformamos los enlaces en mayúsculas*/
+  position: relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
+}
+
+/*Esta clase es para la barra azul que se ve al pasar por el enlace*/
+.menu a::after {
+  content: "";
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px); /* para posicionar el sombreado azul un poco mas abajo*/
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.5s; /*Para que el seleccionado sea mas agradable para la vista*/
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  color: black; /*Para el color de la letra cambia al pasar con el mouse*/
+}
+
+.menu a:active {
+  color: yellow; /*El color de letra cambia al dar click en el enlace*/
+}
+
+/*Este es un padding general de manera horizontal es decir para que se mantenga un poco mas al centro en el eje horizontal*/
+.horizontal-padding {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/*Este es un padding general de manera vertical es decir para que se mantenga un poco mas al centro en el eje vertical*/
+.vertical-padding {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/*Esta clase es para separar el titulo de su contenedor hijo*/
+.title-inline {
+  margin-top: 0;
+  height: 15px;
+  background-color: white;
+}
+
+/*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
+body {
+  padding-top: 150px;
+}
+
+/*Para que los enlaces no se vean de color azul*/
+a {
+  text-decoration: none;
+}
+
+/*Este atributo se utiliza para dejar un margen hacia arriba
+, ya que al utilizar fixed en el menu se necesita un espacio de 100px(lo que ocupa el menú)
+para que las secciones se visualicen bien*/
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/*Este atrbuto es para que al dar click entre las diferentes secciones
+el scroll sea mas suave para la vista*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Este atributo es para los footer únicamente le cambia el color, la alineación y lo eleva un poco
+ya que en lo personal; por ahora no me gusta que quede tan abajo*/
+footer {
+  text-align: center;
+  background-color: #b5bac9;
+  margin-bottom: 80px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/*Clase para las propiedades de la imagen de inicio*/
+.home-img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/*Clase que contendrá a la imagen de inicio*/
+.home-img-section {
+  padding-left: 30px;
+  position: relative; /*La posición es relativa para que en la clase de abajo la pueda poscionar respecto a esta*/
+}
+
+/*Clase que funciona para poner una línea debajo de la imagen de incio*/
+.home-img-line {
+  background-color: aqua;
+  height: 15px;
+  position: absolute; /*Para posicionar la linea respecto a la imagen*/
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+/*Clase que es la sección Inicio y le dará formato a los elementos que esten dentro de ella*/
+.home {
+  text-align: left; /*Alineación del texto a la izquierda*/
+  display: flex; /*Utilice el flex para poner a la derecha del texto la imagen*/
+  justify-content: space-between; /*Para dar espacio entre la imagen y el texto*/
+  align-items: center;
+}
+
+/*Para el titulo Administración de condominios en el inicio*/
+.home-title {
+  text-align: center;
+  font-family: BebasNeue;
+  font-size: 40px;
+  margin: 0;
+  color: black;
+}
+
+.home-details {
+  font-size: 25px;
+  text-align: left;
+  font-family: Merriweather;
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-val {
+  background-color: white;
+  margin: 0;
+}
+
+/*Esta clase es para editar el titulo de la sección Nosotros*/
+.valores-title {
+  text-align: center; /*Centramos el texto*/
+  font-family: BebasNeue; /*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
+  font-size: 40px;
+  color: black;
+}
+
+/*Esta clase es para el fondo detras del título valores*/
+.valores {
+  background-color: aqua;
+  margin-bottom: 1rem;
+}
+
+/*Esta clase es para centrar los valores*/
+.cont-val {
+  padding-top: 0;
+  margin-top: 0;
+  align-items: center;
+}
+
+/*Esta clase es el contenedor que tiene a los div val-column*/
+.val-contenedor {
+  padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+  padding-left: 17%;
+  text-align: center;
+  display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+  background-color: aqua;
+}
+
+/*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+.val-column {
+  align-items: center;
+  width: 180px; /*Un ancho máximo para que se vea mas estructurado*/
+  text-align: left;
+  margin-right: 50px; /*Margenes para que se vea mas estructurado*/
+}
+
+/*Esta clase es para el Nombre de cada valor en los divs*/
+.val-subtitle {
+  text-align: center; /*Lo alineamos en el centro para que se vea mas estético*/
+}
+
+.card-personalizada {
+  width: 180px;
+}
+
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-serv {
+  background-color: white;
+}
+
+/*Esta clase es para editar la sección servicios*/
+.servicios {
+  background-color: beige;
+}
+
+/*Esta clase es para modificar el titulo de la sección servicios*/
+.servicios-title {
+  text-align: center;
+  font-family: BebasNeue;
+  font-size: 40px;
+  color: black;
+  background-color: beige;
+}
+
+.cont-serv {
+  background-color: white;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección servicios*/
+.serv-contenedor {
+  display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+  background-color: beige;
+  justify-content: center;
+}
+
+/*Esta clase es para la imagen de servicios*/
+.serv-logo-img {
+  height: auto;
+  width: auto;
+}
+
+/*Esta clase es para toda la información de Servicios*/
+.serv-info {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*Esta clase contiene a Cobranza y Cobranza via civil*/
+.serv-extras-cont {
+  margin-top: 10px;
+  display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+  justify-content: space-between;
+}
+
+/*Esta clase afecta a cobranza y cobranza via civil*/
+.serv-cobranza {
+  max-width: 380px; /*Definimos un ancho máximo para que se vea más estético*/
+  text-align: left;
+}
+
+/*Esta clase es para los elementos li de la clase serv-cobranza*/
+.serv-cobranza li {
+  padding-bottom: 5px;
+}
+
+/*Esta clase es para editar las propiedades del titulo de cobranza y cobranza via civil*/
+.serv-cobranza-title {
+  text-align: center;
+  font-size: 35px;
+  font-family: BebasNeue;
+  padding-bottom: 15px; /*Ponemos un padding hacia abajo para separar los titulos de la descripción*/
+}
+
+/*Esta clase es para ajustar la altura de la imagen en la version de escritorio*/
+.carousel-item {
+  height: 400px;
+}
+
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-client {
+  background-color: white;
+}
+
+.cont-client {
+  background-color: white;
+  text-align: center;
+}
+
+/*Esta clase es para editar la sección clientes*/
+.clientes {
+  background-color: beige;
+}
+
+/*Esta clase es para modificar el titulo de la sección clientes*/
+.clientes-title {
+  text-align: center;
+  font-family: BebasNeue;
+  font-size: 40px;
+  color: black;
+  background-color: beige;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección clientes*/
+.client-contenedor {
+  /*display: flex;/*Aqui utilice flex para poner un listado a la derecha de la imagen*/
+  display: grid;
+  grid-template-columns: 1fr 1fr; /*Aqui utilice grid para mostrar 2 columnas en las versión de escritorio*/
+  background-color: beige;
+}
+
+.client-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Esta clase es para la imagen de cliente*/
+.client-logo-img {
+  height: auto;
+  width: auto;
+}
+
+/*Esta clase es para toda la información de cliente(Lado derecho)*/
+.client-info {
+  text-align: left;
+  padding-left: 40px;
+}
+
+/*Esta clase es para modficar los elementos li del contenedor .client-info*/
+.client-info li {
+  padding-bottom: 30px;
+}
+
+/*Los siguientes estilos son para el dropdown de la sección clientes*/
+.btn-title {
+  width: 100%;
+}
+
+.dropdown-menu {
+  width: 93%;
+}
+
+.dropdown-item {
+  width: auto;
+  text-align: center;
+}
+
+.btn-title p {
+  text-align: center;
+  font-family: BebasNeue;
+  font-size: 40px;
+  color: black;
+}
+
+.dropdown-menu li a {
+  text-align: center;
+  font-family: BebasNeue;
+  font-size: 40px;
+  color: black;
+}
+
+/*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
+.cambio-seccion-contacto {
+  background-color: white;
+}
+
+/*Esta clase es para editar la sección contacto*/
+.contacto {
+  background-color: #b5bac9;
+}
+
+/*Esta clase es para modificar el titulo de la sección contacto*/
+.contacto-title {
+  text-align: center;
+  font-family: BebasNeue;
+  font-size: 50px;
+  color: white;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+}
+
+/*Esta clase es para modificar el subtitulo de la sección contacto*/
+.contacto-subtitle {
+  text-align: center;
+  font-family: Merrieather;
+  font-size: 25px;
+  color: white;
+  font-style: italic;
+}
+
+.contacto-contenedor p { /*Esta clase es para separar los medios de contacto la utilizamos porque es un elemento de bloque*/
+  display: block;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.contacto-contenedor i {
+  padding-right: 20px;
+}
+
+/*Esta clase es para editar las propiedades de los p de la seccion contacto*/
+.c {
+  font-family: Merrieather;
+  font-style: italic;
+  font-size: 22px;
+  padding: 20px;
+  align-items: center;
+  color: white;
+}
+
+/*Los siguientes estilos son para modificar el formato del formulario de la sección contacto*/
+.input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.i-btn, .i-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.i-button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+.i-black, .i-hover-black:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
+@media screen and (min-device-width: 320px) and (max-width: 480px) {
+  /*Esta clase se enfoca en la imagen del logo y la redondea*/
+  .logo img {
+    border-radius: 50%; /*Imagen redondeada*/
+  }
+  /*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
+  .logo div {
+    color: white;
+    padding-left: 5px;
+  }
+  /*Menú*/
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0px;
+    top: 90px;
+    right: 15px;
+    width: 45%;
+    align-items: left;
+    background-color: #092327;
+    height: 85%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  /*Esta clase es para separar los li del menú*/
+  .menu li {
+    padding: 0 15px;
+  }
+  /*Esta clase es para cambiar el estilo de los enlaces del menú*/
+  .menu a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px; /*Para subir la altura de los enlaces a la del logo y quede mas estético*/
+    text-transform: uppercase; /*Transformamos los enlaces en mayúsculas*/
+    position: relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
+  }
+  /*Propiedades al cerrar y abrir el menú*/
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 20px 15px;
+  }
+  .close-menu {
+    align-self: flex-end;
+  }
+  .menu_abierto {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .home {
+    padding-top: 15px;
+    height: 75vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .home-img-line {
+    display: none;
+  }
+  .home-img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*Para el titulo Administración de condominios en el inicio*/
+  .home-title {
+    font-family: BebasNeue;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    color: black;
+  }
+  .home-details {
+    font-size: 20px;
+    text-align: center;
+    font-family: Merriweather;
+    font-style: italic;
+    max-width: 480px;
+    margin: 0 0;
+  }
+  .horizontal-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /*Este es un padding general de manera vertical es decir para que se mantenga un poco mas al centro en el eje vertical*/
+  .vertical-padding {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  /*Esta clase es para editar el titulo de la sección Nosotros*/
+  .valores-title {
+    text-align: center; /*Centramos el texto*/
+    font-family: BebasNeue; /*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
+    font-size: 40px;
+    color: black;
+  }
+  /*Esta clase es para el fondo detras del título valores*/
+  .valores {
+    background-color: white;
+    margin-bottom: 1rem;
+  }
+  .valores-title {
+    background-color: aqua;
+  }
+  /*Esta clase es para centrar los valores*/
+  .cont-val {
+    align-items: center;
+  }
+  /*Esta clase es el contenedor que tiene a los div val-column*/
+  .val-contenedor {
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    text-align: center;
+    align-items: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    flex-direction: column;
+  }
+  /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+  .val-column {
+    width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
+    max-height: fit-content;
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+  .val-column p {
+    max-width: 480px;
+  }
+  /*Esta clase contiene a la imagen y la información de la sección servicios*/
+  .serv-contenedor {
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .serv-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .serv-extras-cont {
+    margin-top: 10px;
+    display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+    flex-direction: column;
+    align-items: center;
+  }
+  .client-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*Esta clase contiene a la imagen y la información de la sección clientes*/
+  .client-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 5px;
+  }
+  /*Esta clase es el contenedor que tiene a los div val-column*/
+  .val-contenedor {
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    padding-left: 17%;
+    text-align: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    background-color: beige;
+  }
+  .valor {
+    padding-left: 5%;
+  }
+  .card-personalizada {
+    width: 300px;
+  }
+  .carousel-item {
+    height: 200px;
+  }
+  body {
+    padding-top: 75px;
+  }
+  .dropdown-menu li a {
+    text-align: left;
+    font-family: BebasNeue;
+    font-size: 20px;
+    color: black;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home {
+    padding-top: 15px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /*Esta clase es el contenedor que tiene a los div val-column*/
+  .val-contenedor {
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    padding-left: 10%;
+    text-align: center;
+    align-items: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    flex-direction: column;
+  }
+  /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+  .val-column {
+    width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
+    max-height: fit-content;
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+  .val-column p {
+    max-width: 480px;
+  }
+  .card-personalizada {
+    width: 340px;
+  }
+  /*Esta clase contiene a la imagen y la información de la sección servicios*/
+  .serv-contenedor {
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+  }
+  /*Esta clase contiene a la imagen y la información de la sección clientes*/
+  .client-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 5px;
+  }
+  /*Los siguientes estilos son para el dropdown de la sección clientes*/
+  .btn-title {
+    width: 100%;
+  }
+  .dropdown-menu {
+    width: 93%;
+  }
+  .dropdown-item {
+    width: auto;
+    text-align: center;
+  }
+  .btn-title p {
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+  }
+  .dropdown-menu li a {
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+  }
+}
+/*Fuentes que utilice en el proyecto*/
+@font-face {
+  font-family: BebasNeue;
+  src: url(../assets/fonts/Bebasneue/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: Merriweather;
+  src: url(../assets/fonts/Merryweather/Merriweather-Regular.ttf);
+}
+/*Este es un reset que nos recomendaron los profes :)*/
+* {
+  margin: 0;
+  padding: 0;
+  margin-right: 0-px;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */

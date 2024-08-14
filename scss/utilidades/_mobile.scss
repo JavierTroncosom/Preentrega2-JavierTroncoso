@@ -1,0 +1,234 @@
+/*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
+@media screen and (min-device-width:320px) and (max-width:480px){
+    /*Esta clase se enfoca en la imagen del logo y la redondea*/
+.logo img{
+    border-radius: 50%; /*Imagen redondeada*/
+}
+
+/*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
+.logo div{
+    color:white;
+    padding-left: 5px;
+}
+
+/*Menú*/
+.menu{
+    flex-direction: column;
+    position:fixed;
+    left:0px;
+    top: 90px;
+    right: 15px;
+    width: 45%;
+    align-items: left;
+    background-color: #092327 ;
+    height: 85%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+/*Esta clase es para separar los li del menú*/
+.menu li{
+    padding: 0 15px;
+
+}
+
+/*Esta clase es para cambiar el estilo de los enlaces del menú*/
+.menu a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 60px; /*Para subir la altura de los enlaces a la del logo y quede mas estético*/
+    text-transform: uppercase; /*Transformamos los enlaces en mayúsculas*/
+    position:relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
+}
+
+/*Propiedades al cerrar y abrir el menú*/
+.open-menu,
+.close-menu{
+    display: block;
+    border:none;
+    background: none;
+    cursor: pointer;
+    padding: 20px 15px;
+}
+.close-menu{
+    align-self: flex-end;
+}
+
+.menu_abierto{
+    opacity: 1;
+    pointer-events: all;
+}
+.home{
+  padding-top: 15px;
+  height: 75vh;
+  display: grid;
+  grid-template-rows: 50% 50%;  
+display: flex;
+flex-direction: column-reverse;
+}
+
+
+.home-img-line{
+    display: none;
+}
+
+.home-img-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*Para el titulo Administración de condominios en el inicio*/
+.home-title{
+    font-family: BebasNeue;
+    text-align: center;
+    font-size: 30px;
+    margin:0;
+    color: black;
+}
+
+.home-details{
+    font-size: 20px;
+    text-align: center;
+    font-family: Merriweather;
+    font-style: italic;
+    max-width: 480px;
+    margin: 0 0;
+}
+
+.horizontal-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/*Este es un padding general de manera vertical es decir para que se mantenga un poco mas al centro en el eje vertical*/
+.vertical-padding{
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+
+/*Esta clase es para editar el titulo de la sección Nosotros*/
+.valores-title{
+    text-align: center; /*Centramos el texto*/
+    font-family: BebasNeue;/*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
+    font-size: 40px;
+    color: black;
+}
+
+/*Esta clase es para el fondo detras del título valores*/
+.valores{
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.valores-title{
+    background-color: aqua;
+}
+
+/*Esta clase es para centrar los valores*/
+.cont-val{
+    align-items: center;
+}
+
+
+/*Esta clase es el contenedor que tiene a los div val-column*/
+.val-contenedor{
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    text-align: center;
+    align-items: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    flex-direction: column;
+}
+
+/*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+.val-column{
+    width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
+    max-height: fit-content;
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 10px;
+}
+
+.val-column p{
+    max-width: 480px;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección servicios*/
+.serv-contenedor{
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.serv-info{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    }
+
+.serv-extras-cont{
+    margin-top: 10px;
+    display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Esta clase contiene a la imagen y la información de la sección clientes*/
+.client-contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 5px;
+}
+
+/*Esta clase es el contenedor que tiene a los div val-column*/
+.val-contenedor{
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    padding-left: 17%;
+    text-align: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    background-color: beige;
+}
+
+.valor{
+    padding-left: 5%;
+}
+
+.card-personalizada{
+    width: 300px;
+}
+
+.carousel-item{
+    height: 200px;
+}
+
+body{
+    padding-top: 75px;
+}
+
+.dropdown-menu li a{
+    text-align: left;
+    font-family: BebasNeue;
+    font-size: 20px;
+    color: black;
+}
+}

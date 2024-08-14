@@ -1,0 +1,33 @@
+@import "utilidades/menu";
+@import "utilidades/home";
+@import "utilidades/valores";
+@import "utilidades/service";
+@import "utilidades/clientes";
+@import "utilidades/contact";
+@import "utilidades/mobile";
+@import "utilidades/tablet";
+
+
+
+/*Fuentes que utilice en el proyecto*/
+@font-face {
+    font-family: BebasNeue;
+    src: url(../assets/fonts/Bebasneue/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(../assets/fonts/Merryweather/Merriweather-Regular.ttf);
+}
+
+/*Este es un reset que nos recomendaron los profes :)*/
+@mixin reset{
+    margin: 0;
+    padding: 0;
+    margin-right: 0-px;
+    box-sizing: border-box;
+  }
+
+*{
+    @include reset;
+}
