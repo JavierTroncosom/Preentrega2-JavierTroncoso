@@ -135,46 +135,22 @@ footer {
   display: none;
 }
 
-/*Clase para las propiedades de la imagen de inicio*/
-.home-img {
-  width: 100%;
-  max-width: 1200px;
-}
-
-/*Clase que contendrá a la imagen de inicio*/
-.home-img-section {
-  padding-left: 30px;
-  position: relative; /*La posición es relativa para que en la clase de abajo la pueda poscionar respecto a esta*/
-}
-
-/*Clase que funciona para poner una línea debajo de la imagen de incio*/
-.home-img-line {
-  background-color: aqua;
-  height: 15px;
-  position: absolute; /*Para posicionar la linea respecto a la imagen*/
-  width: 100%;
-  left: 0;
-  bottom: 0;
-}
-
 /*Clase que es la sección Inicio y le dará formato a los elementos que esten dentro de ella*/
 .home {
   text-align: left; /*Alineación del texto a la izquierda*/
   display: flex; /*Utilice el flex para poner a la derecha del texto la imagen*/
   justify-content: space-between; /*Para dar espacio entre la imagen y el texto*/
   align-items: center;
+  /*Clase que contendrá a la imagen de inicio*/
 }
-
-/*Para el titulo Administración de condominios en el inicio*/
-.home-title {
+.home .home-title { /*Para el titulo Administración de condominios en el inicio*/
   text-align: center;
   font-family: BebasNeue;
   font-size: 40px;
   margin: 0;
   color: black;
 }
-
-.home-details {
+.home .home-details {
   font-size: 25px;
   text-align: left;
   font-family: Merriweather;
@@ -182,6 +158,22 @@ footer {
   line-height: 1.5;
   max-width: 650px;
   margin: 0 auto;
+}
+.home .home-img-section {
+  padding-left: 30px;
+  position: relative; /*La posición es relativa para que en la clase de abajo la pueda poscionar respecto a esta*/
+}
+.home .home-img-section .home-img {
+  width: 100%;
+  max-width: 1200px;
+}
+.home .home-img-section .home-img-line { /*Clase que funciona para poner una línea debajo de la imagen de incio*/
+  background-color: aqua;
+  height: 15px;
+  position: absolute; /*Para posicionar la linea respecto a la imagen*/
+  width: 100%;
+  left: 0;
+  bottom: 0;
 }
 
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
