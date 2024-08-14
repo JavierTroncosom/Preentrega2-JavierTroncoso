@@ -20,44 +20,37 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
     margin: 0 auto; /*Para que al agrandar a minimizar el contenido a lo ancho se ajuste al header*/;
 }
 
+//Nesting
 /*Esta clase contiene el logo y el nombre de la empresa*/
 .logo{
     display: flex; /*Este flex lo utilice para poner el nombre de la empresa a la derecha del logo*/
     align-items: center;
     font-size: 18px;
+    img{/*Esta clase se enfoca en la imagen del logo y la redondea*/
+        border-radius: 50%; /*Imagen redondeada*/
+    }
+    div{ /*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
+        color:white;
+        padding-left: 5px;
+    }
 }
 
-/*Esta clase se enfoca en la imagen del logo y la redondea*/
-.logo img{
-    border-radius: 50%; /*Imagen redondeada*/
-}
 
-/*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
-.logo div{
-    color:white;
-    padding-left: 5px;
-}
-
-/*Menú*/
+/*Menú*/  //Nesting
 .menu{
     display: flex; /*Este flex lo utilice para posicionar todos los elementos de la lista del menú*/
     list-style: none; /*Para quitar el circulo que traen por default los li*/
-}
-
-/*Esta clase es para separar los li del menú*/
-.menu li{
-    padding: 0 15px;
-
-}
-
-/*Esta clase es para cambiar el estilo de los enlaces del menú*/
-.menu a{
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 70px; /*Para subir la altura de los enlaces a la del logo y quede mas estético*/
-    text-transform: uppercase; /*Transformamos los enlaces en mayúsculas*/
-    position:relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
+    li{
+        padding: 0 15px; /*Esta clase es para separar los li del menú*/
+        a{/*Esta clase es para cambiar el estilo de los enlaces del menú*/
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 70px; /*Para subir la altura de los enlaces a la del logo y quede mas estético*/
+            text-transform: uppercase; /*Transformamos los enlaces en mayúsculas*/
+            position:relative; /*Se pone relative para que en menu a after nos posicionemos respecto al enlace*/
+        }
+    }
 }
 
 /*Esta clase es para la barra azul que se ve al pasar por el enlace*/

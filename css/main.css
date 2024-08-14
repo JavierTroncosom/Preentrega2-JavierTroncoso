@@ -27,14 +27,10 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
   align-items: center;
   font-size: 18px;
 }
-
-/*Esta clase se enfoca en la imagen del logo y la redondea*/
-.logo img {
+.logo img { /*Esta clase se enfoca en la imagen del logo y la redondea*/
   border-radius: 50%; /*Imagen redondeada*/
 }
-
-/*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
-.logo div {
+.logo div { /*Esta clase es para las propiedas del nombre de la empresa a la derecha del logo*/
   color: white;
   padding-left: 5px;
 }
@@ -44,14 +40,10 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
   display: flex; /*Este flex lo utilice para posicionar todos los elementos de la lista del menú*/
   list-style: none; /*Para quitar el circulo que traen por default los li*/
 }
-
-/*Esta clase es para separar los li del menú*/
 .menu li {
-  padding: 0 15px;
+  padding: 0 15px; /*Esta clase es para separar los li del menú*/
 }
-
-/*Esta clase es para cambiar el estilo de los enlaces del menú*/
-.menu a {
+.menu li a { /*Esta clase es para cambiar el estilo de los enlaces del menú*/
   color: white;
   font-size: 18px;
   font-weight: 500;
