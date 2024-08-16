@@ -468,8 +468,87 @@ footer {
   background-color: #000;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home {
+    padding-top: 15px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /*Esta clase es el contenedor que tiene a los div val-column*/
+  .val-contenedor {
+    padding-top: 10px; /*Agregue padding para darle un mejor formato*/
+    padding-left: 10%;
+    text-align: center;
+    align-items: center;
+    display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
+    flex-direction: column;
+  }
+  /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
+  .val-column {
+    width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
+    max-height: fit-content;
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 10px;
+  }
+  .val-column p {
+    max-width: 480px;
+  }
+  .card-personalizada {
+    width: 340px;
+  }
+  /*Esta clase contiene a la imagen y la información de la sección servicios*/
+  .serv-contenedor {
+    display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+  }
+  /*Esta clase contiene a la imagen y la información de la sección clientes*/
+  .client-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    row-gap: 5px;
+  }
+  /*Los siguientes estilos son para el dropdown de la sección clientes*/
+  .btn-title {
+    width: 100%;
+  }
+  .dropdown-menu {
+    width: 93%;
+  }
+  .dropdown-item {
+    width: auto;
+    text-align: center;
+  }
+  .btn-title p {
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+  }
+  .dropdown-menu li a {
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 40px;
+    color: black;
+  }
+}
 /*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
-@media screen and (min-device-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
+  body {
+    margin-top: 0px;
+  }
   /*Esta clase se enfoca en la imagen del logo y la redondea*/
   .logo img {
     border-radius: 50%; /*Imagen redondeada*/
@@ -525,36 +604,38 @@ footer {
     pointer-events: all;
   }
   .home {
-    padding-top: 15px;
-    height: 75vh;
+    padding-top: 21px;
+    height: 70vh;
     display: grid;
     grid-template-rows: 50% 50%;
     display: flex;
     flex-direction: column-reverse;
+    /*Para el titulo Administración de condominios en el inicio*/
   }
-  .home-img-line {
-    display: none;
-  }
-  .home-img-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /*Para el titulo Administración de condominios en el inicio*/
-  .home-title {
+  .home .home-title {
     font-family: BebasNeue;
     text-align: center;
     font-size: 30px;
     margin: 0;
     color: black;
   }
-  .home-details {
-    font-size: 20px;
-    text-align: center;
+  .home .home-details {
+    font-size: 21px;
+    text-align: left;
     font-family: Merriweather;
     font-style: italic;
     max-width: 480px;
     margin: 0 0;
+    padding-bottom: 0;
+  }
+  .home .home-img-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .home .home-img-section .home-img-line {
+    display: none;
+    height: 0;
   }
   .horizontal-padding {
     padding-left: 15px;
@@ -665,37 +746,50 @@ footer {
     color: black;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*Aqui implementamos el mediaquery para celulares (únicamente vista horizontal)*/
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  /*Esta clase es mi barra de navegación que contendrá los enlaces para moverme entre secciones*/
+  body {
+    padding-top: 35px;
+  }
   .home {
-    padding-top: 15px;
-    height: 70vh;
-    display: grid;
-    grid-template-rows: 50% 50%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0 0;
+  }
+  .horizontal-padding {
+    padding-left: 90px;
+    padding-right: 70px;
   }
   /*Esta clase es el contenedor que tiene a los div val-column*/
   .val-contenedor {
     padding-top: 10px; /*Agregue padding para darle un mejor formato*/
-    padding-left: 10%;
     text-align: center;
     align-items: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
     flex-direction: column;
   }
+  .val-2 {
+    margin-right: 45px;
+    display: flex;
+    flex-direction: row;
+  }
   /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
   .val-column {
-    width: 350px; /*Un ancho máximo para que se vea mas estructurado*/
+    width: 180px; /*Un ancho máximo para que se vea mas estructurado*/
     max-height: fit-content;
     text-align: center;
     margin-left: 0px;
     padding-bottom: 10px;
+    padding-right: 0px;
   }
   .val-column p {
     max-width: 480px;
   }
   .card-personalizada {
-    width: 340px;
+    width: 230px;
   }
   /*Esta clase contiene a la imagen y la información de la sección servicios*/
   .serv-contenedor {
@@ -705,9 +799,15 @@ footer {
   }
   /*Esta clase es para modificar las imagenes del carrousel de la sección servicios*/
   .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit:  cover;
+    display: none;
+  }
+  .serv-extras-cont {
+    margin-top: 10px;
+    display: flex; /*Aqui utilice flex para separar en 2 columnas cobranza y cobranza via civil*/
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    text-align: left;
   }
   /*Esta clase contiene a la imagen y la información de la sección clientes*/
   .client-contenedor {
@@ -716,27 +816,10 @@ footer {
     align-content: center;
     row-gap: 5px;
   }
-  /*Los siguientes estilos son para el dropdown de la sección clientes*/
-  .btn-title {
-    width: 100%;
-  }
-  .dropdown-menu {
-    width: 93%;
-  }
-  .dropdown-item {
-    width: auto;
-    text-align: center;
-  }
-  .btn-title p {
-    text-align: center;
-    font-family: BebasNeue;
-    font-size: 40px;
-    color: black;
-  }
   .dropdown-menu li a {
-    text-align: center;
+    text-align: left;
     font-family: BebasNeue;
-    font-size: 40px;
+    font-size: 25px;
     color: black;
   }
 }
