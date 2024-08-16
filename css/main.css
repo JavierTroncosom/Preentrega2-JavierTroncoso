@@ -561,15 +561,16 @@ footer {
   }
   /*Menú*/
   .menu {
-    flex-direction: column;
     position: fixed;
-    left: 0px;
-    top: 75px;
+    flex-direction: column;
+    left: 0;
+    padding-top: 0px;
+    top: 73px;
     right: 15px;
     width: 38%;
     align-items: left;
     background-color: #092327;
-    height: 58%;
+    height: 380px;
     overflow-y: auto;
     opacity: 0;
     pointer-events: none;
@@ -577,7 +578,7 @@ footer {
   }
   /*Esta clase es para separar los li del menú*/
   .menu li {
-    padding: 0 0px;
+    padding: 0px 0px;
     align-items: center;
   }
   /*Esta clase es para cambiar el estilo de los enlaces del menú*/
