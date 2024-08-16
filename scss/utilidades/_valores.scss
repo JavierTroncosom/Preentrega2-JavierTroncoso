@@ -9,12 +9,12 @@
     text-align: center; /*Centramos el texto*/
     font-family: BebasNeue;/*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
     font-size: 40px;
-    color: black;
+    color: white;
 }
 
 /*Esta clase es para el fondo detras del título valores*/
 .valores{
-    background-color: aqua;
+    background-color:#6C757D;
     margin-bottom: 1rem;
 }
 
@@ -29,17 +29,18 @@
 /*Esta clase es el contenedor que tiene a los div val-column*/
 .val-contenedor{
     padding-top: 10px; /*Agregue padding para darle un mejor formato*/
-    padding-left: 17%;
+    padding-left:10%;
+    padding-right:17%;
     text-align: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
-    background-color: aqua;
+    background-color: #6C757D;
 }
 
 
 /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
 .val-column{
     align-items: center;
-    width: 180px; /*Un ancho máximo para que se vea mas estructurado*/
+    width: 280px; /*Un ancho máximo para que se vea mas estructurado*/
     text-align: left;
     margin-right: 50px; /*Margenes para que se vea mas estructurado*/
 }
@@ -50,5 +51,5 @@
 }
 
 .card-personalizada{
-    width: 180px;
+    width: 280px;
 }

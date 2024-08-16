@@ -207,14 +207,16 @@ body {
 /*Esta clase es el contenedor que tiene a los div val-column*/
 .val-contenedor{
     padding-top: 10px; /*Agregue padding para darle un mejor formato*/
-    padding-left: 17%;
+    padding-left:100px;
+    padding-right:17%;
     text-align: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
     background-color: beige;
+    margin-right: 0;
 }
 
 .valor{
-    padding-left: 5%;
+    padding-left: 30px;
 }
 
 .card-personalizada{
@@ -266,15 +268,11 @@ margin: 0 0
     flex-direction: column;
 }
 
-.val-2{
-    margin-right: 45px;
-    display: flex;
-    flex-direction: row;
-}
+
 
     /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
     .val-column{
-        width: 180px; /*Un ancho máximo para que se vea mas estructurado*/
+        width: 300px; /*Un ancho máximo para que se vea mas estructurado*/
         max-height: fit-content;
         text-align: center;
         margin-left: 0px;
@@ -287,7 +285,7 @@ margin: 0 0
     }
 
     .card-personalizada{
-        width: 230px;
+        width: 300px;
     }
 
      /*Esta clase contiene a la imagen y la información de la sección servicios*/
@@ -327,4 +325,8 @@ margin: 0 0
     color: black;
 }
 
+.carousel
+{
+    display: none;
+}
 }
