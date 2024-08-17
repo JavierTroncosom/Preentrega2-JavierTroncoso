@@ -7,7 +7,7 @@
 
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
 .cambio-seccion-client{
-    background-color:white;
+    background-color:$cambio-seccion-client;
 }
 
 .cont-client{
@@ -17,7 +17,7 @@
 
 /*Esta clase es para editar la sección clientes*/
 .clientes{
-    background-color: beige;
+    background-color: $fondo-clientes;
 }
 
 /*Esta clase es para modificar el titulo de la sección clientes*/
@@ -26,7 +26,7 @@
     font-family: BebasNeue;
     font-size: 40px;
     color: black;
-    background-color: beige;
+    background-color: $clientes-title;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección clientes*/
@@ -34,7 +34,7 @@
     /*display: flex;/*Aqui utilice flex para poner un listado a la derecha de la imagen*/
     display: grid;
     grid-template-columns: 1fr 1fr; /*Aqui utilice grid para mostrar 2 columnas en las versión de escritorio*/
-    background-color: beige;
+    background-color: $fondo-clientes;
 }
 
 .client-contenedor img{

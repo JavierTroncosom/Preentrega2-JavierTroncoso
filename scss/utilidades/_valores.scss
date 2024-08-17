@@ -1,6 +1,6 @@
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
 .cambio-seccion-val{
-    background-color:white;
+    background-color:$cambio-seccion-val;
     margin:0;
     
 }
@@ -9,12 +9,12 @@
     text-align: center; /*Centramos el texto*/
     font-family: BebasNeue;/*Seleccionamos otro tipo de fuente,cambiamos el color y el tamaño*/
     font-size: 40px;
-    color: white;
+    color: $valores-title-font-color;
 }
 
 /*Esta clase es para el fondo detras del título valores*/
 .valores{
-    background-color:#6C757D;
+    background-color:$fondo-valores;
     margin-bottom: 1rem;
 }
 
@@ -33,7 +33,7 @@
     padding-right:17%;
     text-align: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
-    background-color: #6C757D;
+    background-color: $fondo-valores;
 }
 
 

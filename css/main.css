@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/*Este archivo es para modificar los principales colores de fondo de la página*/
+/*Color de fondo menu*/
+/*color de fondo de la sección valores*/
+/*Color entre la separacion del titulo y contenido de cada seccion*/
+/*color de fondo del del titulo de  valores*/
+/*Color de cambio de seccion inicio a valores*/
+/*Color de cambio de seccion valores a servicios*/
+/*color de fondo de la sección servicios*/
+/*color de fondo del del titulo de servicios*/
+/*color de fondo del del titulo de servicios*/
+/*Color de cambio de seccion servicios a clientes*/
+/*Color de fondo de la sección clientes*/
+/*Color de cambio de seccion clientes a contacto*/
+/*Color de fondo de la sección contacto*/
+/*Color de fondo del footer*/
 /*Esta clase se utiliza para el menú en el cual le agregue el color de fondo
 la sombra de color verde, que ocupará todo el ancho de la pantalla y 
 el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
@@ -250,7 +265,7 @@ footer {
 }
 
 .cont-serv {
-  background-color: white;
+  background-color: beige;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección servicios*/
@@ -316,7 +331,7 @@ footer {
 
 /*Esta clase es para editar la sección clientes*/
 .clientes {
-  background-color: beige;
+  background-color: #b5bac9;
 }
 
 /*Esta clase es para modificar el titulo de la sección clientes*/
@@ -333,7 +348,7 @@ footer {
   /*display: flex;/*Aqui utilice flex para poner un listado a la derecha de la imagen*/
   display: grid;
   grid-template-columns: 1fr 1fr; /*Aqui utilice grid para mostrar 2 columnas en las versión de escritorio*/
-  background-color: beige;
+  background-color: #b5bac9;
 }
 
 .client-contenedor img {

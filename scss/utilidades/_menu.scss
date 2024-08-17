@@ -4,7 +4,7 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
 .topheader{
     position:fixed;
     box-shadow: 0 4px 5px green;
-    background-color: #092327 ;
+    background-color: $fondo-menu;
     left:0;
     top:0;
     width: 100%;
@@ -97,7 +97,7 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
 .title-inline{
     margin-top: 0;
     height: 15px;
-    background-color: white;
+    background-color: $title-inline;
 }
 
 /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
@@ -127,7 +127,7 @@ html{
 ya que en lo personal; por ahora no me gusta que quede tan abajo*/
 footer{
     text-align: center;
-    background-color:  #b5bac9;
+    background-color:$fondo-footer;
     margin-bottom: 80px;
     margin-left: 70px;
     margin-right: 70px;

@@ -1,11 +1,11 @@
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
 .cambio-seccion-contacto{
-    background-color: white;
+    background-color: $cambio-seccion-contacto;
 }
 
 /*Esta clase es para editar la sección contacto*/
 .contacto{
-    background-color: #b5bac9;
+    background-color:$fondo-clientes;
 }
 
 /*Esta clase es para modificar el titulo de la sección contacto*/

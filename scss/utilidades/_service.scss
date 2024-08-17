@@ -1,11 +1,11 @@
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
 .cambio-seccion-serv{
-    background-color:white;
+    background-color:$cambio-seccion-serv;
 }
 
 /*Esta clase es para editar la sección servicios*/
 .servicios{
-    background-color: beige;
+    background-color: $fondo-servicios;
 }
 
 /*Esta clase es para modificar el titulo de la sección servicios*/
@@ -14,17 +14,17 @@
     font-family: BebasNeue;
     font-size: 40px;
     color: black;
-    background-color: beige;
+    background-color: $servicios-title;
 }
 
 .cont-serv{
-    background-color: white;
+    background-color: $fondo-servicios;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección servicios*/
 .serv-contenedor{
     display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
-    background-color: beige;
+    background-color: $fondo-servicios;
     justify-content: center;
 }
 
