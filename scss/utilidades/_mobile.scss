@@ -71,8 +71,6 @@ body {
 }
 .home{
     padding-top: 0px;
-    display: grid;
-    grid-template-rows: 50% 50%;  
     display: flex;
     flex-direction: column-reverse;
     /*Para el titulo Administración de condominios en el inicio*/
