@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../estilos/contacto.css">
     <script defer src="../js/app.js"></script>
     <script src="https://kit.fontawesome.com/bc08dabb5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css"> <!--Este es el css general para todo el proyecto-->
 </head>
 <body> <!--Aqui empece el body que sera todo el cuerpo del proyecto-->
     <header class="topheader"> <!--Aqui inserte el header que sirve como menú de mi proyecto-->
@@ -46,24 +47,24 @@
     </header>
     <main>
         
-        <div class="cambio-seccion-serv">    <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <div class="horizontal-padding vertical-padding">       <!--Div que contendrá a la sección y le dará padding para centrarla-->
+        <article class="cambio-seccion-serv">    <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <article class="horizontal-padding vertical-padding">       <!--Div que contendrá a la sección y le dará padding para centrarla-->
                 <section class="servicios" id="Servicios">          <!--Sección Servicios-->
-                    <div class="cont-serv">
+                    <article class="cont-serv">
                         <h2 class="servicios-title">Servicios</h2>      <!--Título de la sección Servicios-->
                         <p class="title-inline"></p>                     <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                        <div class="serv-contenedor ">                    <!--Contenedor de la imagen e información de servicios-->
-                            <div class="Carousel-container col-12 col-lg-6">
+                        <article class="serv-contenedor ">                    <!--Contenedor de la imagen e información de servicios-->
+                            <div class="Carousel-container .d-md-none .d-lg-block col-12 col-lg-6"> <!--Este div es responsive con bootsrap-->
                                 <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark  carousel-fade slide" data-bs-touch="false">
                                     <div class="carousel-inner">
                                         <div class="carousel-item active carousel-img justify">
-                                            <img  src="../assets/images/Admon.png" class="d-block  mw-50" alt="...">
+                                            <img  src="../assets/images/Admon.png" class="d-block  mw-50" alt="Logo de la empresa">
                                         </div>
                                         <div class="carousel-item carousel-img">
-                                            <img src="../assets/images/cobranza-civil.jpg" class="d-block mw-50" alt="...">
+                                            <img src="../assets/images/cobranza-civil.jpg" class="d-block mw-50" alt="Cobranza civil">
                                         </div>
                                         <div class="carousel-item carousel-img">
-                                            <img src="../assets/images/cobranza.jpg" class="d-block mw-50" alt="...">
+                                            <img src="../assets/images/cobranza.jpg" class="d-block mw-50" alt="Cobranza">
                                         </div>
                                     </div>
                                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -76,7 +77,7 @@
                                         </button>
                                     </div>
                                 </div>
-                            <div class="serv-info .col-lg-6">
+                            <div class="serv-info .col-lg-6">   <!--Este div es responsive con bootsrap-->
                                 <li> Registro ante PROSOC y libro de Actas.</li>
                                 <li>Organizar Comité de Vigilancia.</li>
                                 <li> Monitoreo y elaboración de consignas de seguridad.</li>
@@ -101,11 +102,11 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </article>
+                    </article>
                 </section>   <!--Fin de la sección Servicios-->
-            </div>
-        </div>
+            </article>
+        </article>
     </main>
 
 </body>
