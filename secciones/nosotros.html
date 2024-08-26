@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../estilos/contacto.css">
     <script defer src="../js/app.js"></script>
     <script src="https://kit.fontawesome.com/bc08dabb5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css"> <!--Este es el css general para todo el proyecto-->
 </head>
 <body> <!--Aqui empece el body que sera todo el cuerpo del proyecto-->
     <header class="topheader"> <!--Aqui inserte el header que sirve como menú de mi proyecto-->
@@ -46,70 +47,71 @@
     </header>
     <main>
         
-        <div class="cambio-seccion-val"> <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <div class="horizontal-padding vertical-padding"> <!--Div que contendrá a la sección y le dará padding para centrarla-->
+        <article class="cambio-seccion-val"> <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
+            <article class="horizontal-padding vertical-padding"> <!--Div que contendrá a la sección y le dará padding para centrarla-->
                 <section class="valores" id="Nosotros"><!--Sección Nosotros-->
-                    <div class="cont-val">
+                    <p class="cont-val">
                         <h2 class="valores-title">Nuestros Valores</h2> <!--Aqui inserte un h2, ya no use h1 por recomandaciones de los profes, de solo tener un h1-->
                         <p class="title-inline"></p> <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
                         <div class="val-contenedor">  <!--Aqui inserte un contenedor en el que estarán los valores, descripción e imagen -->
-                            <div class="val-column">   <!--La clase val-column la utilice como columna para cada uno de los valores-->
+                            <figure class="val-column">   <!--La clase val-column la utilice como columna para cada uno de los valores-->
                                 <img height ="100" width="170" src="../assets/images/Mision.jpg" alt="Mision">  <!--Aqui inserte una imagen-->
                                 <p class="val-subtitle">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Mision" role="button" aria-expanded="false" aria-controls="Mision">Misión</a>
+                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Mision" role="button" aria-expanded="false" aria-controls="Mision">Misión</a>
                                 </p>
                                 <div class="valor">
                                     <div class="collapse collapse-horizontal" id="Mision">
-                                      <div class="card card-personalizada  card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quam porro molestias, quos laudantium sint ipsa similique quia reprehenderit perferendis, a nobis modi earum officia cum sit eveniet, fugit eos.
+                                      <div class="card card-personalizada  text-white bg-dark  card-body">
+                                        Ofrecer soluciones inmobiliarias para mejorar la calidad de vida de nuestros clientes y mejorar la plusvalía de sus condominios.
                                       </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="val-column">
+                                <div>
+                            </figure>
+                            <figure class="val-column">
                                 <img  height ="100" width="170" src="../assets/images/Vision.jpg" alt="Vision">  <!--Aqui inserte una imagen-->
                                 <p class="val-subtitle">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Vision" role="button" aria-expanded="false" aria-controls="Vision">Vision</a>
+                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Vision" role="button" aria-expanded="false" aria-controls="Vision">Vision</a>
                                 </p>
                                 <div class="valor">
                                     <div class="collapse collapse-horizontal" id="Vision">
-                                      <div class="card card-personalizada  card-body">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat explicabo nulla eum facere voluptatem consequatur consequuntur nemo cumque aliquid tempora earum ex unde eaque amet sed, quas impedit, dolore labore!
+                                      <div class="card card-personalizada text-white bg-dark  card-body">
+                                        Ofrecer las mejores soluciones ,bienestar, atención y satisfacción para nuestros clientes.
                                       </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="val-column">
+                            </figure>
+                            <figure class="val-column">
                                 <img  height ="100" width="170" src="../assets/images/Compromiso.jpg" alt="Compromiso">   <!--Aqui inserte una imagen-->
                                 <p class="val-subtitle">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Compromiso" role="button" aria-expanded="false" aria-controls="Compromiso">Compromiso</a>
+                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Compromiso" role="button" aria-expanded="false" aria-controls="Compromiso">Compromiso</a>
                                 </p>
                                 <div class="valor">
                                     <div class="collapse collapse-horizontal" id="Compromiso">
-                                      <div class="card card-personalizada  card-body" >
-                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, neque eligendi iste repellendus sunt repellat dolor exercitationem deleniti ducimus adipisci doloribus officia ullam porro? Consequuntur tenetur facere aliquam fugit quam.
+                                      <div class="card card-personalizada text-white bg-dark  card-body" >
+                                        Tenemos 15 años de experiencia en el mercado y nuestro equipo cuenta con certificaciones por parte de la PROSOC de la Ciudad de México
                                       </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="val-column">
+                            </figure>
+                            <figure class="val-column">
                                 <img  height ="100" width="170" src="../assets/images/Atencion.jpg" alt="Atención">   <!--Aqui inserte una imagen-->
                                 <p class="val-subtitle">
-                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#Atencion" role="button" aria-expanded="false" aria-controls="Atencion">Atención</a>
+                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Atencion" role="button" aria-expanded="false" aria-controls="Atencion">Atención</a>
                                 </p>
                                 <div class="valor">
                                     <div class="collapse collapse-horizontal" id="Atencion">
-                                      <div class="card  card-personalizada card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, nesciunt consequuntur, accusantium sint aperiam natus culpa omnis ipsa repellat dignissimos tenetur esse earum delectus eos. Unde quas ipsam consequatur fuga!
+                                      <div class="card  card-personalizada text-white bg-dark  card-body">
+                                        Contamos con atención continua a lo largo del dia, y acudimos a los condominios a la brevedad en caso de alguna emergencia
                                       </div>
                                     </div>
                                 </div>
-                            </div>
+                            </figure>
                         </div>
-                    </div>
+                    </p>
+
                 </section>  <!--Fin de la sección Nosotros-->
-            </div>
-        </div>
+            </article>
+        </article>
     </main>
 
 </body>
