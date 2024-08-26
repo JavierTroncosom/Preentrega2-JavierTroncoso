@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--2.0 Nota para los profesores-->
+    <!--2.0Nota para los profesores-->
     <!--El archivo index Muestra en la pagína las 5 secciones
     Inicio,Nosotros,Sevicios,Clientes y Contacto-->
     <!--Los otros archivos html de la carpeta secciones funcionan entre ellos,
     Ya que en este index se encuentran los 4 archivos pero como secciones;
     los incluí para que se pudiera entender mejor que hice en cada sección y cumplir con lo  que indico el profe Fede-->
-    <!---->
-    <!--Nota para el tutor José Alvarez-->
-    <!--Profe en la pasada pre-entrega me indico tratar de reducir el número de divs y eso hice
-    solo que en esta preentrega al utilizar bootstrap la mayoría de los divs ayudan a que la pagina sea responsive
-    o a darle un mejor formato, los que eran innecesarios los cambie por etiquetas semánticas :)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name ="description" content="Administración de condominios,ofrecemos soluciones inmobiliarias,seguridad,privacidad y plusvalía para condominios">
@@ -22,15 +17,16 @@
     y después utilice uno para cada sección para que asi sean más facil de modificar-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script defer src="./js/app.js"></script>
+    <link rel="stylesheet" href="../css/main.css"> <!--Este es el css general para todo el proyecto-->
+    <script defer src="../js/app.js"></script>
     <script src="https://kit.fontawesome.com/bc08dabb5d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/main.css"> <!--Este es el css general para todo el proyecto-->
+    <link rel="stylesheet" href="../css/main.css"> <!--Este es el css general para todo el proyecto-->
 </head>
 <body> <!--Aqui empece el body que sera todo el cuerpo del proyecto-->
     <header class="topheader"> <!--Aqui inserte el header que sirve como menú de mi proyecto-->
         <nav class="topnav">   <!--Aqui inserte el nav-->
             <a href="#" class="logo">
-                <img height ="70" width="70" src="./assets/images/Admon.png" alt="logo"> <!--Imagen que servirá como logo del menú-->
+                <img height ="70" width="70" src="../assets/images/Admon.png" alt="logo"> <!--Imagen que servirá como logo del menú-->
                 <div>
                     Admon Raíces
                 </div>
@@ -42,11 +38,11 @@
                 <button class="close-menu" aria-label="Cerrar menú">
                     <i class="fa-solid fa-xmark fa-2x fa-lg" style="color: #ffffff;"></i>
                 </button>
-                <li><a href="#Inicio">Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
-                <li><a href="#Nosotros">Nosotros</a></li>
-                <li><a href="#Servicios">Servicios</a></li>
-                <li><a href="#Clientes">Clientes</a></li>
-                <li><a href="#Contacto">Contacto</a></li>
+                <li><a href="./secciones/inicio.html"class="selected" >Inicio</a></li>   <!--Aqui inserte los li con enlaces-->
+                <li><a href="./secciones/nosotros.html">Nosotros</a></li>
+                <li><a href="./secciones/servicios.html">Servicios</a></li>
+                <li><a href="./secciones/clientes.html">Clientes</a></li>
+                <li><a href="./secciones/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -63,211 +59,16 @@
                     </p>
                 </div>
                 <figure class="home-img-section  col-sm-12 col-md-12 col-lg-6"> <!--Div que contendrá la imagen--> <!--Este div es responsive con bootsrap-->
-                    <img class="home-img" src="./assets/images/torre.jpg" alt="Torre Latino">  <!--Aqui inserte la imagen de inicio-->
+                    <img class="home-img" src="../assets/images/torre.jpg" alt="Torre Latino">  <!--Aqui inserte la imagen de inicio-->
                     <span class="home-img-line"></span> <!--Aqui inserte un span para la línea azul que va abajo de la imagen-->
                 </figure>
             </section> <!--Fin de la sección Inicio-->
-        </article>
-        
-        <article class="cambio-seccion-val"> <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <article class="horizontal-padding vertical-padding"> <!--Div que contendrá a la sección y le dará padding para centrarla-->
-                <section class="valores" id="Nosotros"><!--Sección Nosotros-->
-                    <p class="cont-val">
-                        <h2 class="valores-title">Nuestros Valores</h2> <!--Aqui inserte un h2, ya no use h1 por recomandaciones de los profes, de solo tener un h1-->
-                        <p class="title-inline"></p> <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                        <div class="val-contenedor">  <!--Aqui inserte un contenedor en el que estarán los valores, descripción e imagen -->
-                            <figure class="val-column">   <!--La clase val-column la utilice como columna para cada uno de los valores-->
-                                <img height ="100" width="170" src="./assets/images/Mision.jpg" alt="Mision">  <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">
-                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Mision" role="button" aria-expanded="false" aria-controls="Mision">Misión</a>
-                                </p>
-                                <div class="valor">
-                                    <div class="collapse collapse-horizontal" id="Mision">
-                                      <div class="card card-personalizada  text-white bg-dark  card-body">
-                                        Ofrecer soluciones inmobiliarias para mejorar la calidad de vida de nuestros clientes y mejorar la plusvalía de sus condominios.
-                                      </div>
-                                    </div>
-                                <div>
-                            </figure>
-                            <figure class="val-column">
-                                <img  height ="100" width="170" src="./assets/images/Vision.jpg" alt="Vision">  <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">
-                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Vision" role="button" aria-expanded="false" aria-controls="Vision">Vision</a>
-                                </p>
-                                <div class="valor">
-                                    <div class="collapse collapse-horizontal" id="Vision">
-                                      <div class="card card-personalizada text-white bg-dark  card-body">
-                                        Ofrecer las mejores soluciones ,bienestar, atención y satisfacción para nuestros clientes.
-                                      </div>
-                                    </div>
-                                </div>
-                            </figure>
-                            <figure class="val-column">
-                                <img  height ="100" width="170" src="./assets/images/Compromiso.jpg" alt="Compromiso">   <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">
-                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Compromiso" role="button" aria-expanded="false" aria-controls="Compromiso">Compromiso</a>
-                                </p>
-                                <div class="valor">
-                                    <div class="collapse collapse-horizontal" id="Compromiso">
-                                      <div class="card card-personalizada text-white bg-dark  card-body" >
-                                        Tenemos 15 años de experiencia en el mercado y nuestro equipo cuenta con certificaciones por parte de la PROSOC de la Ciudad de México
-                                      </div>
-                                    </div>
-                                </div>
-                            </figure>
-                            <figure class="val-column">
-                                <img  height ="100" width="170" src="./assets/images/Atencion.jpg" alt="Atención">   <!--Aqui inserte una imagen-->
-                                <p class="val-subtitle">
-                                    <a class="btn btn-dark" data-bs-toggle="collapse" href="#Atencion" role="button" aria-expanded="false" aria-controls="Atencion">Atención</a>
-                                </p>
-                                <div class="valor">
-                                    <div class="collapse collapse-horizontal" id="Atencion">
-                                      <div class="card  card-personalizada text-white bg-dark  card-body">
-                                        Contamos con atención continua a lo largo del dia, y acudimos a los condominios a la brevedad en caso de alguna emergencia
-                                      </div>
-                                    </div>
-                                </div>
-                            </figure>
-                        </div>
-                    </p>
-
-                </section>  <!--Fin de la sección Nosotros-->
-            </article>
-        </article>
-
-        <article class="cambio-seccion-serv">    <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <article class="horizontal-padding vertical-padding">       <!--Div que contendrá a la sección y le dará padding para centrarla-->
-                <section class="servicios" id="Servicios">          <!--Sección Servicios-->
-                    <article class="cont-serv">
-                        <h2 class="servicios-title">Servicios</h2>      <!--Título de la sección Servicios-->
-                        <p class="title-inline"></p>                     <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                        <article class="serv-contenedor ">                    <!--Contenedor de la imagen e información de servicios-->
-                            <div class="Carousel-container .d-md-none .d-lg-block col-12 col-lg-6"> <!--Este div es responsive con bootsrap-->
-                                <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark  carousel-fade slide" data-bs-touch="false">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active carousel-img justify">
-                                            <img  src="./assets/images/Admon.png" class="d-block  mw-50" alt="Logo de la empresa">
-                                        </div>
-                                        <div class="carousel-item carousel-img">
-                                            <img src="./assets/images/cobranza-civil.jpg" class="d-block mw-50" alt="Cobranza civil">
-                                        </div>
-                                        <div class="carousel-item carousel-img">
-                                            <img src="./assets/images/cobranza.jpg" class="d-block mw-50" alt="Cobranza">
-                                        </div>
-                                    </div>
-                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            <div class="serv-info .col-lg-6">   <!--Este div es responsive con bootsrap-->
-                                <li> Registro ante PROSOC y libro de Actas.</li>
-                                <li>Organizar Comité de Vigilancia.</li>
-                                <li> Monitoreo y elaboración de consignas de seguridad.</li>
-                                <li> Supervisión constante del personal de limpieza general de áreas comunes.</li>
-                                <li> Supervisión de trabajos de mantenimiento preventivo y correctivo de instalaciones. </li>
-                                <div class="serv-extras-cont">
-                                    <div class="serv-cobranza">
-                                        <h2 class="serv-cobranza-title">Cobranza</h2>  <!--Subtitulo de la sección servicios-->
-                                        <li>Efectuamos recuperación a corto plazo, empleamos el diálogo para de manera cortés y
-                                            diplomática, convencer a los condóminos con morosidad de efectuar sus pagos, así como
-                                            exponer la importancia de cumplimiento de sus cuotas condominales.
-                                            </li>
-                                    </div>
-                                    <div class="serv-cobranza">
-                                        <h2 class="serv-cobranza-title">Cobranza via Civil</h2>  <!--Subtitulo de la sección servicios-->
-                                        <li> Aplica en los casos en que ya se agotaron todas las instancias (incluyendo PROSOC) y
-                                            por la asamblea se aprueba recurrir a esta vía.
-                                            </li>
-                                        <li> Contamos con una experimentada y bien constituida área legal que puede asesorar y
-                                            llevar a cabo los protocolos pertinentes para la recuperación de cuotas morosas (costo
-                                            extra)</li>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </article>
-                </section>   <!--Fin de la sección Servicios-->
-            </article>
-        </article>
-
-        <article class="cambio-seccion-client">     <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <article class="horizontal-padding vertical-padding">    <!--Div que contendrá a la sección y le dará padding para centrarla-->
-                <section class="clientes" id="Clientes">         <!--Sección Clientes-->
-                    <article class="cont-client">
-                        <h2 class="clientes-title">Clientes</h2>   <!--Título de la sección Clientes-->
-                        <p class="title-inline"></p>               <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                        <article class="client-contenedor">
-                            <img src="./assets/images/c1.jpg" alt="Condominio Privanza Morelos">
-                            <img src="./assets/images/c2.jpg" alt="Condominio Palenque">
-                            <img src="./assets/images/c3.jpg" alt="Condominio Villas Europeas">
-                            <img src="./assets/images/c4.jpg" alt="Condominio Taller">
-                            <img src="./assets/images/c5.jpg" alt="Condominios Geovillas la viga">
-                            <img src="./assets/images/c6.jpg" alt="Condominio Zempoala 397">
-                        </article>
-                    </article>
-                    <div class="col text-center">
-                        <button type="button" class="btn btn-title btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          <p>Nuestros clientes</p>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" >Condominio “Privanza Morelos”</a></li>
-                          <li><a class="dropdown-item" >Condominio Palenque</a></li>
-                          <li><a class="dropdown-item" >Condominio “Villas Europeas”</a></li>
-                          <li><a class="dropdown-item" >Condominio “Condominio “Taller””</a></li>
-                          <li><a class="dropdown-item" >Condominio “Geovillas La Viga”</a></li>
-                          <li><a class="dropdown-item" >Condominio “Zempoala 397”</a></li>
-                        </ul>
-                    </div>
-                </section>     <!--Fin de la sección Clientes-->
-            </article>
-        </article>
-
-        <article class="cambio-seccion-contacto">      <!--Div cambio de sección este div lo utilicé en cada cambio de sección para poder identificarlas al hacer pruebas-->
-            <article class="horizontal-padding vertical-padding">   <!--Div que contendrá a la sección y le dará padding para centrarla-->
-                <section class="contacto" id="Contacto">         <!--Sección Contacto-->
-                    <article class="cont-contact">
-                        <h2 class="contacto-title">Contacto</h2>      <!--Título de la sección Contacto-->
-                        <p class="contacto-subtitle">Comunicate con nosotros o Escribenos tus dudas</p>
-                        <p class="title-inline"></p>                  <!--Este párrafo sirve para dejar un espacio entre el título y el contenido-->
-                        <figure class="contacto-contenedor">             <!--Este contenedor tiene todos los medios de contacto y estará del lado izquierdo-->
-                            <p class="c"><i class="fab fa-whatsapp fa-2x"></i> 55 79 2831 76</p>
-                            <p class="c"><i class="fa fa-envelope fa-2x " style="color: #1C1B17;"></i>admonbraices@gmail.com</p>
-                            <p class="c"><i class="fas fa-map-marker-alt fa-2x"></i>Francisco Pimentel No. 45, Col. San Rafael</p>
-                            <form action="">
-                                <p>
-                                    <input class="input i-border" type="text" placeholder="Nombre" required="" name="Name">
-                                <p>
-                                <p>
-                                    <input class="input i-border" type="text" placeholder="Email" required="" name="Email">
-                                </p>
-                                <p>
-                                    <input class="input i-border" type="text" placeholder="Teléfono" required="" name="Number">
-                                </p>
-                                <p>
-                                    <input class="input i-border" type="text" placeholder="Mensaje" required="" name="Message">
-                                </p>
-                                <p>
-                                    <button class="i-button i-black" type="submit">
-                                        <i class="fa fa-paper-plane"></i> ENVIAR
-                                      </button>
-                                </p>
-                            </form>
-                        </figure>
-                    </article>
-                </section>  <!--Fin de la sección Contacto-->
-            </article>
         </article>
     </main>
 
 </body>
 <footer>    <!--Aqui empieza el footer-->
-    <img height ="70" width="70" src="./assets/images/Admon.png" alt="logo">  <!--Aqui inserte una imagen como logo para el footer-->
+    <img height ="70" width="70" src="../assets/images/Admon.png" alt="logo">  <!--Aqui inserte una imagen como logo para el footer-->
     <p>Copyright 2024© Admon Raíces</p>
 </footer>    <!--Aqui termina el footer-->
 </html>
