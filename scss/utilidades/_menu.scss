@@ -121,13 +121,14 @@ section[id]{
 el scroll sea mas suave para la vista*/
 html{
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 /*Este atributo es para los footer únicamente le cambia el color, la alineación y lo eleva un poco
 ya que en lo personal; por ahora no me gusta que quede tan abajo*/
 footer{
-    width: 100%;
-    margin-bottom: 0;
+    display: block;
+    bottom: 0;
     text-align: center;
     background-color:$fondo-footer;
 }
