@@ -756,7 +756,7 @@ footer {
     height: 200px;
   }
   body {
-    padding-top: 75px;
+    padding-top: 85px;
   }
   .dropdown-menu li a {
     text-align: left;
@@ -769,7 +769,7 @@ footer {
 @media only screen and (min-width: 575px) and (max-width: 767px) {
   /*Esta clase es mi barra de navegación que contendrá los enlaces para moverme entre secciones*/
   body {
-    padding-top: 35px;
+    padding-top: 105px;
   }
   .home {
     display: flex;
