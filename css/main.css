@@ -180,7 +180,7 @@ footer {
 }
 .home .home-img-section .home-img {
   width: 100%;
-  max-width: 1200px;
+  max-width: 850px;
 }
 .home .home-img-section .home-img-line { /*Clase que funciona para poner una línea debajo de la imagen de incio*/
   background-color: aqua;
@@ -484,14 +484,15 @@ footer {
   background-color: #000;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1114px) {
+@media only screen and (min-width: 767px) and (max-width: 991px) {
   .home {
-    padding-top: 15px;
-    height: 70vh;
-    display: grid;
-    grid-template-rows: 50% 50%;
+    padding-top: 0px;
     display: flex;
     flex-direction: column-reverse;
+  }
+  .home .home-img {
+    max-width: 580px;
+    min-width: 576px;
   }
   /*Esta clase es el contenedor que tiene a los div val-column*/
   .val-contenedor {
@@ -560,7 +561,7 @@ footer {
   }
 }
 /*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
   body {
     margin-top: 0px;
