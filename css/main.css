@@ -191,6 +191,24 @@ footer {
   bottom: 0;
 }
 
+.home2 {
+  background-color: #f6f6fb;
+}
+.home2 .card-deck {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.home2 .card-deck .card {
+  color: white;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  background-color: #092327;
+}
+
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
 .cambio-seccion-val {
   background-color: white;
@@ -654,6 +672,15 @@ footer {
   .home .home-img-section .home-img-line {
     display: none;
     height: 0;
+  }
+  .home2 .card-deck {
+    flex-direction: column;
+  }
+  .home2 .card-deck .card {
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    width: fit-content;
   }
   .horizontal-padding {
     padding-left: 15px;

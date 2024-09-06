@@ -103,6 +103,18 @@ body {
     }
 }
 
+.home2{
+    .card-deck{
+        flex-direction: column;
+        .card{
+            margin-right: 0px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+            width: fit-content;
+        }
+    }
+}
+
 
 
 .horizontal-padding{

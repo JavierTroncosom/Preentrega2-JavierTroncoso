@@ -41,3 +41,22 @@
      }
 }
 
+.home2{
+    background-color:#f6f6fb;
+    .card-deck{
+        display: flex;
+        flex-direction: row;
+        margin-right: 15px;
+        margin-bottom: 0;
+        margin-left: 15px;
+        .card{
+            color:white;
+            margin-right: 15px;
+            margin-bottom: 5px;
+            margin-left: 15px;
+            background-color:$fondo-menu;
+
+        }
+    }
+}
+
