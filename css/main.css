@@ -399,11 +399,23 @@ footer {
 
 .dropdown-menu {
   width: 93%;
+  opacity: 0.8;
+  background-color: #565E54;
+}
+
+.dropdown-menu .dropdown-item {
+  color: white; /* Cambia 'green' al color deseado */
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(9, 35, 39, 0.2);
+  color: #009929;
 }
 
 .dropdown-item {
   width: auto;
   text-align: center;
+  background-color: #565E54;
 }
 
 .btn-title p {
