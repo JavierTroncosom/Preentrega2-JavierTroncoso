@@ -6,6 +6,8 @@
 /*Esta clase es para editar la sección servicios*/
 .servicios{
     background-color: $fondo-servicios;
+    color:white;
+    margin-bottom: 20px;
 }
 
 /*Esta clase es para modificar el titulo de la sección servicios*/
@@ -13,7 +15,7 @@
     text-align: center;
     font-family: BebasNeue;
     font-size: 40px;
-    color: black;
+    color: white;
     background-color: $servicios-title;
 }
 

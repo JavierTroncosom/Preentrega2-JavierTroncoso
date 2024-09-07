@@ -22,6 +22,12 @@
     src: url(../assets/fonts/Merryweather/Merriweather-Regular.ttf);
 }
 
+@font-face{
+    font-family: Urbanist;
+    src: url(../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
+}
+
+
 /*Este es un reset que nos recomendaron los profes :)*/
 @mixin reset{
     margin: 0;

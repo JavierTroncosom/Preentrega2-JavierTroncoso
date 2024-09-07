@@ -31,7 +31,7 @@
             max-width: 850px;
         }
         .home-img-line{/*Clase que funciona para poner una línea debajo de la imagen de incio*/
-            background-color: aqua;
+            background-color: green;
             height: 15px;
             position:absolute;/*Para posicionar la linea respecto a la imagen*/
             width: 100%;
@@ -43,6 +43,12 @@
 
 .home2{
     background-color:#f6f6fb;
+    margin-bottom: 20px;
+    .home2-title{
+        font-family: BebasNeue;
+        font-size:40px;
+        padding-left: 45px;
+    }
     .card-deck{
         display: flex;
         flex-direction: row;
@@ -55,6 +61,11 @@
             margin-bottom: 5px;
             margin-left: 15px;
             background-color:$fondo-menu;
+            .card-title{
+                font-family: Urbanist;
+                font-size: 40px;
+
+            }
 
         }
     }

@@ -142,7 +142,8 @@ footer {
   display: block;
   bottom: 0;
   text-align: center;
-  background-color: #b5bac9;
+  background-color: #1f3438;
+  color: white;
 }
 
 .open-menu,
@@ -183,7 +184,7 @@ footer {
   max-width: 850px;
 }
 .home .home-img-section .home-img-line { /*Clase que funciona para poner una línea debajo de la imagen de incio*/
-  background-color: aqua;
+  background-color: green;
   height: 15px;
   position: absolute; /*Para posicionar la linea respecto a la imagen*/
   width: 100%;
@@ -193,6 +194,12 @@ footer {
 
 .home2 {
   background-color: #f6f6fb;
+  margin-bottom: 20px;
+}
+.home2 .home2-title {
+  font-family: BebasNeue;
+  font-size: 40px;
+  padding-left: 45px;
 }
 .home2 .card-deck {
   display: flex;
@@ -207,6 +214,10 @@ footer {
   margin-bottom: 5px;
   margin-left: 15px;
   background-color: #092327;
+}
+.home2 .card-deck .card .card-title {
+  font-family: Urbanist;
+  font-size: 40px;
 }
 
 /*Esta clase es para hacer pruebas en los cambios de seccion por el color de fondo esta en blanco*/
@@ -270,7 +281,9 @@ footer {
 
 /*Esta clase es para editar la sección servicios*/
 .servicios {
-  background-color: beige;
+  background-color: #193737;
+  color: white;
+  margin-bottom: 20px;
 }
 
 /*Esta clase es para modificar el titulo de la sección servicios*/
@@ -278,18 +291,18 @@ footer {
   text-align: center;
   font-family: BebasNeue;
   font-size: 40px;
-  color: black;
-  background-color: beige;
+  color: white;
+  background-color: #193737;
 }
 
 .cont-serv {
-  background-color: beige;
+  background-color: #193737;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección servicios*/
 .serv-contenedor {
   display: flex; /*Aqui utilice flex para poner información a la drecha de la imagen*/
-  background-color: beige;
+  background-color: #193737;
   justify-content: center;
 }
 
@@ -349,7 +362,8 @@ footer {
 
 /*Esta clase es para editar la sección clientes*/
 .clientes {
-  background-color: #b5bac9;
+  background-color: beige;
+  margin-bottom: 20px;
 }
 
 /*Esta clase es para modificar el titulo de la sección clientes*/
@@ -357,8 +371,8 @@ footer {
   text-align: center;
   font-family: BebasNeue;
   font-size: 40px;
-  color: black;
-  background-color: beige;
+  color: white;
+  background-color: #05262b;
 }
 
 /*Esta clase contiene a la imagen y la información de la sección clientes*/
@@ -366,7 +380,7 @@ footer {
   /*display: flex;/*Aqui utilice flex para poner un listado a la derecha de la imagen*/
   display: grid;
   grid-template-columns: 1fr 1fr; /*Aqui utilice grid para mostrar 2 columnas en las versión de escritorio*/
-  background-color: #b5bac9;
+  background-color: beige;
 }
 
 .client-contenedor img {
@@ -439,7 +453,8 @@ footer {
 
 /*Esta clase es para editar la sección contacto*/
 .contacto {
-  background-color: #b5bac9;
+  background-color: #1f3438;
+  margin-bottom: 20px;
 }
 
 /*Esta clase es para modificar el titulo de la sección contacto*/
@@ -888,6 +903,10 @@ footer {
 @font-face {
   font-family: Merriweather;
   src: url(../assets/fonts/Merryweather/Merriweather-Regular.ttf);
+}
+@font-face {
+  font-family: Urbanist;
+  src: url(../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf);
 }
 /*Este es un reset que nos recomendaron los profes :)*/
 * {
