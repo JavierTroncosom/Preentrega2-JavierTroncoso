@@ -17,6 +17,10 @@ use PHPMailer\PHPMailer\SMTP;
 
 require 'PHPMailer/vendor/autoload.php';
 
+$Nombre=$_POST['Name'];
+$correo=$_POST['Email'];
+$tel=$_POST['Telefono'];
+$Mens=$_POST['Mensaje'];
 //Create a new PHPMailer instance
 $mail = new PHPMailer();
 
@@ -56,10 +60,10 @@ $mail->SMTPOptions = array (
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = 'troncosoadan32@gmail.com';
+$mail->Username = 'admonraices399@gmail.com';
 
 //Password to use for SMTP authentication
-$mail->Password = 'xkck jcjw quyh guey';
+$mail->Password = 'ftsm emrb xzgi ejnn';
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
@@ -74,14 +78,14 @@ $mail->setFrom('troncosoadan32@gmail.com', 'Correo de informacion');
 //$mail->addAddress('bererov.09@gmail.com', 'Bere');
 $mail->addAddress('adan.troncoso@live.com.mx', 'Adan');
 //Set the subject line
-$mail->Subject = 'PHPMailer GMail SMTP test';
+$mail->Subject = 'Información Cliente';
 
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 //$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
 //Replace the plain text body with one created manually
-$mail->Body = 'Esto es una prueba para la recepción de correos';
+$mail->Body = 'Hola ,'.$Nombre.' quiere comunicarse contigo su correo es : '.$correo.'.';
 
 //Attach an image fil
 //send the message, check for errors
