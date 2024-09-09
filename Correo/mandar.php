@@ -2,6 +2,7 @@
 require 'PHPMailer/vendor/phpmailer/phpmailer/src/Exception.php';
 require 'PHPMailer/vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require 'PHPMailer/vendor/phpmailer/phpmailer/src/SMTP.php';
+require '../../config.php';
 
 
 /**
@@ -60,10 +61,10 @@ $mail->SMTPOptions = array (
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = 'admonraices399@gmail.com';
+$mail->Username = 'DB_MAIL';
 
 //Password to use for SMTP authentication
-$mail->Password = 'ftsm emrb xzgi ejnn';
+$mail->Password = 'DB_PASSWD';
 
 //Set who the message is to be sent from
 //Note that with gmail you can only use your account address (same as `Username`)
