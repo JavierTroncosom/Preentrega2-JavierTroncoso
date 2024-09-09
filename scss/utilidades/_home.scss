@@ -19,8 +19,6 @@
         font-family: Merriweather;
         font-style: italic;
         line-height: 1.5;
-        max-width: 650px;
-        margin: 0 auto;
     }
     /*Clase que contendrá a la imagen de inicio*/
     .home-img-section{
@@ -28,7 +26,6 @@
         position: relative;/*La posición es relativa para que en la clase de abajo la pueda poscionar respecto a esta*/
         .home-img{
             width: 100%;
-            max-width: 850px;
         }
         .home-img-line{/*Clase que funciona para poner una línea debajo de la imagen de incio*/
             background-color: green;

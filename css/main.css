@@ -114,7 +114,7 @@ el z-index ya que tenia un problema con la imagen de inicio que se superponia*/
 
 /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
 body {
-  padding-top: 150px;
+  padding-top: 140px;
 }
 
 /*Para que los enlaces no se vean de color azul*/
@@ -172,8 +172,6 @@ footer {
   font-family: Merriweather;
   font-style: italic;
   line-height: 1.5;
-  max-width: 650px;
-  margin: 0 auto;
 }
 .home .home-img-section {
   padding-left: 30px;
@@ -181,7 +179,6 @@ footer {
 }
 .home .home-img-section .home-img {
   width: 100%;
-  max-width: 850px;
 }
 .home .home-img-section .home-img-line { /*Clase que funciona para poner una línea debajo de la imagen de incio*/
   background-color: green;
@@ -537,15 +534,19 @@ footer {
   margin-right: 20px;
 }
 
-@media only screen and (min-width: 767px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    padding-top: 100px;
+  }
   .home {
     padding-top: 0px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
-  .home .home-img {
-    max-width: 580px;
-    min-width: 576px;
+  .home .home-details {
+    text-align: center;
+    font-family: Merriweather;
+    font-style: italic;
   }
   /*Esta clase es el contenedor que tiene a los div val-column*/
   .val-contenedor {
@@ -614,7 +615,7 @@ footer {
   }
 }
 /*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
   body {
     margin-top: 0px;
@@ -829,17 +830,19 @@ footer {
   }
 }
 /*Aqui implementamos el mediaquery para celulares (únicamente vista horizontal)*/
-@media only screen and (min-width: 575px) and (max-width: 767px) {
+@media only screen and (min-width: 575px) and (max-width: 768px) {
   /*Esta clase es mi barra de navegación que contendrá los enlaces para moverme entre secciones*/
   body {
-    padding-top: 105px;
+    padding-top: 90px;
   }
   .home {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin: 0 0;
+  }
+  .home .home-img-section img {
+    width: 514px;
+    height: auto;
+    object-fit: cover;
   }
   .horizontal-padding {
     padding-left: 90px;
