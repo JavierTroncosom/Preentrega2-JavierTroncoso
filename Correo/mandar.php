@@ -70,14 +70,14 @@ $mail->Password = 'DB_PASSWD';
 //Note that with gmail you can only use your account address (same as `Username`)
 //or predefined aliases that you have configured within your account.
 //Do not use user-submitted addresses in here
-$mail->setFrom('troncosoadan32@gmail.com', 'Correo de informacion');
+$mail->setFrom('admonraices399@gmail.com', 'Correo de informacion');
 
 //Set an alternative reply-to address
 //This is a good place to put user-submitted addresses
 
 //Set who the message is to be sent to
 //$mail->addAddress('bererov.09@gmail.com', 'Bere');
-$mail->addAddress('adan.troncoso@live.com.mx', 'Adan');
+$mail->addAddress('adan.troncoso@live.com.mx', 'YO');
 //Set the subject line
 $mail->Subject = 'Información Cliente';
 
@@ -86,7 +86,7 @@ $mail->Subject = 'Información Cliente';
 //$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
 //Replace the plain text body with one created manually
-$mail->Body = 'Hola ,'.$Nombre.' quiere comunicarse contigo su correo es : '.$correo.'.';
+$mail->Body = 'Hola ,'.$Nombre.' quiere comunicarse contigo su correo es : '.$correo.'su teléfono es '.$tel.'y escribió el siguiente mensaje <br> '.$Mens.'.' ;
 
 //Attach an image fil
 //send the message, check for errors
