@@ -306,7 +306,7 @@ footer {
 /*Esta clase es para la imagen de servicios*/
 .serv-logo-img {
   height: auto;
-  width: auto;
+  max-width: 80%;
 }
 
 /*Esta clase es para toda la información de Servicios*/
