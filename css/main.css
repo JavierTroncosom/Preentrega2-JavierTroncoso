@@ -212,6 +212,9 @@ footer {
   margin-left: 15px;
   background-color: #092327;
 }
+.home2 .card-deck .card .card-text {
+  font-size: 20px;
+}
 .home2 .card-deck .card .card-title {
   font-family: Urbanist;
   font-size: 40px;
@@ -557,6 +560,9 @@ footer {
     margin-left: 0px;
     width: fit-content;
   }
+  .home2 .card-deck .card .card-text {
+    font-size: 30px;
+  }
   /*Esta clase es el contenedor que tiene a los div val-column*/
   .val-contenedor {
     padding-top: 10px; /*Agregue padding para darle un mejor formato*/
@@ -726,6 +732,9 @@ footer {
     margin-bottom: 30px;
     margin-left: 0px;
     width: fit-content;
+  }
+  .home2 .card-deck .card .card-text {
+    font-size: 23px;
   }
   .horizontal-padding {
     padding-left: 15px;
