@@ -534,7 +534,7 @@ footer {
   margin-right: 20px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   body {
     padding-top: 100px;
   }
@@ -615,7 +615,7 @@ footer {
   }
 }
 /*Aqui implementamos el mediaquery para celulares (únicamente vista vertical)*/
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 320px) and (max-width: 768.98px) {
   /*Un padding hacia arriba del body de 100 px, para que se vea mas estético*/
   body {
     margin-top: 0px;
@@ -830,7 +830,7 @@ footer {
   }
 }
 /*Aqui implementamos el mediaquery para celulares (únicamente vista horizontal)*/
-@media only screen and (min-width: 575px) and (max-width: 768px) {
+@media only screen and (min-width: 575px) and (max-width: 768.98px) {
   /*Esta clase es mi barra de navegación que contendrá los enlaces para moverme entre secciones*/
   body {
     padding-top: 90px;
