@@ -365,6 +365,10 @@ footer {
   background-color: beige;
   margin-bottom: 20px;
 }
+.clientes .condominio-cont .view {
+  object-fit: cover;
+  width: 100%;
+}
 
 /*Esta clase es para modificar el titulo de la sección clientes*/
 .clientes-title {

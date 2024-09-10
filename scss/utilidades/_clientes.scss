@@ -19,6 +19,12 @@
 .clientes{
     background-color: $fondo-clientes;
     margin-bottom: 20px;
+    .condominio-cont{
+        .view{
+            object-fit: cover;
+            width: 100%;
+        }
+    }
 }
 
 /*Esta clase es para modificar el titulo de la sección clientes*/
