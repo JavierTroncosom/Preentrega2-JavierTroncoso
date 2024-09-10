@@ -236,7 +236,7 @@ footer {
 
 /*Esta clase es para el fondo detras del título valores*/
 .valores {
-  background-color: #6C757D;
+  background-color: #2f4f4f;
   margin-bottom: 1rem;
 }
 
@@ -254,7 +254,7 @@ footer {
   padding-right: 17%;
   text-align: center;
   display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
-  background-color: #6C757D;
+  background-color: #2f4f4f;
 }
 
 /*Esta clase son los divs hijos que contendrán a los valores su descripción y su imagen*/
@@ -762,7 +762,8 @@ footer {
     margin-bottom: 1rem;
   }
   .valores-title {
-    background-color: aqua;
+    background-color: #2f4f4f;
+    color: white;
   }
   /*Esta clase es para centrar los valores*/
   .cont-val {
@@ -829,7 +830,7 @@ footer {
     padding-right: 17%;
     text-align: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
-    background-color: beige;
+    background-color: #2f4f4f;
     margin-right: 0;
   }
   .valor {

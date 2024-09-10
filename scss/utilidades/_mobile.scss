@@ -148,7 +148,8 @@ body {
 }
 
 .valores-title{
-    background-color: aqua;
+    background-color: $fondo-valores;
+    color:white
 }
 
 /*Esta clase es para centrar los valores*/
@@ -227,7 +228,7 @@ body {
     padding-right:17%;
     text-align: center;
     display: flex; /*Aqui utilice flex para mostrar como columnas los divs hijos*/
-    background-color: beige;
+    background-color: $fondo-valores;
     margin-right: 0;
 }
 
